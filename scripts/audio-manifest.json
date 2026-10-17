@@ -1,0 +1,533 @@
+{
+  "count": 88,
+  "entries": [
+    {
+      "course": "limits",
+      "section": "functions-and-units",
+      "file": "limits/functions-and-units.wav",
+      "narration": "Calculus studies change and accumulation, and every calculation starts from a model. This chapter turns a changing system into functions with stated domains, units and assumptions, and sets up the limits that calculus is built on. A function assigns exactly one output to each allowed input. Take the workshop. During an eight-hour shift, finished chairs arrive one at a time, so the true count is a staircase of whole numbers. The model q of t equals three t replaces it with a straight line. That is an idealisation, and a useful one: rates and totals are easy to define on a line, and awkward on a staircase. Every model needs a domain, here from zero to eight hours, and units: hours in, chairs out. Then the rate will be chairs per hour. But the model also says that two and a half hours in, seven and a half chairs are finished. Half a chair is not real, so we state the idealisation up front. Next, the functions we will use most."
+    },
+    {
+      "course": "limits",
+      "section": "elementary-functions",
+      "file": "limits/elementary-functions.wav",
+      "narration": "Which functions do we need? A short list covers most models: powers, exponentials, logarithms and the trigonometric functions. The exponential e to the x multiplies by the same factor for every unit step, so it describes steady growth or decay. The natural logarithm undoes it, and it is defined only for positive inputs. Sine and cosine take angles in radians, where pi radians is a half turn. Real models combine these by composition: the output of one function becomes the input of another. On the left, the machine's temperature during warm-up is twenty plus sixty times one minus e to the minus t over two. It starts at twenty degrees, climbs quickly, and levels off towards eighty. After two hours it reads about fifty eight degrees. Composition has a cost. The inner function's output must lie in the outer function's domain, so the logarithm of x minus one needs x above one, and a square root needs a nonnegative input. Next, what happens near a point where a function is undefined."
+    },
+    {
+      "course": "limits",
+      "section": "limits",
+      "file": "limits/limits.wav",
+      "narration": "What value does a function approach, even where it is not defined? That is the question a limit answers. Look at x squared minus one, over x minus one. At x equals one it is zero over zero, undefined. But everywhere else the factor x minus one cancels, and the function is simply x plus one. Its graph is a straight line with a single hole. The table approaches from both sides. From the left, the values are one point nine, one point nine nine, one point nine nine nine. From the right, two point one, two point zero one, two point zero zero one. Both sides head to two, so the limit is two, even though the function has no value at one. A limit ignores the point itself and looks only at what happens nearby. One-sided limits approach from one direction only, and the two-sided limit exists only when they agree. Limit laws let us combine limits of simpler pieces, as long as we never divide by a limit of zero. Next, limits far out."
+    },
+    {
+      "course": "limits",
+      "section": "limits-at-infinity",
+      "file": "limits/limits-at-infinity.wav",
+      "narration": "What does a function do far away, or right next to a point where it blows up? Take two x plus one, over x minus one. For large x, divide top and bottom by x. The small pieces one over x vanish, and the ratio settles towards two. That is a horizontal asymptote, the dashed line y equals two. Near x equals one, the denominator shrinks to zero while the numerator stays near three, so the function grows without bound: a vertical asymptote. Some limits look like zero over zero or infinity over infinity. These are indeterminate forms, because the form alone does not decide the answer. Two functions can both look like zero over zero and have completely different limits. The table shows four forms and the rewriting that settles each one: cancelling a factor, dividing through, multiplying by a conjugate, or comparing growth rates. And when we say a limit is infinite, we mean it does not exist as a number; infinity describes how it fails. Next, what it means for a function to have no breaks."
+    },
+    {
+      "course": "limits",
+      "section": "continuity",
+      "file": "limits/continuity.wav",
+      "narration": "When can we trust a function to have no surprises? When it is continuous. Continuity at a point needs three things: the function has a value there, the limit exists there, and the two agree. The graph on the left breaks the rule in all three ways it can. At x equals one there is a hole. The limit exists, but the value is missing, so redefining a single point would repair it. At x equals three there is a jump: the left and right limits disagree, as when a workshop's electricity price switches at a fixed hour. No single value can fix that. And at x equals five the values shoot off to infinity, so no limit exists at all. The good news is that continuity is preserved by the usual operations. Sums, products, compositions and quotients of continuous functions are continuous wherever they are defined. At the edge of a domain only one side exists, so continuity there is one-sided, and the shift model is continuous on its whole closed interval. Next, what continuity guarantees."
+    },
+    {
+      "course": "limits",
+      "section": "existence-theorems",
+      "file": "limits/existence-theorems.wav",
+      "narration": "What does continuity let us conclude? Two theorems answer, and both are about existence. The intermediate value theorem says that a continuous function on an interval takes every value between its endpoint values. On the left, the cubic g starts at one and has dropped to minus one at x equals one, so it must cross zero in between. The theorem does not say where. Computing it, the crossing is near zero point three five, and a second one is near one point five three. The extreme value theorem says that a continuous function on a closed, bounded interval reaches a largest and a smallest value. Here the minimum is minus one at x equals one, and the maximum is three at the right end. Each hypothesis matters. On the open interval from zero to one, the function x gets ever closer to zero but never reaches it. Its infimum is zero, yet it has no minimum. When we optimise later, these conditions decide whether a best answer even exists. Next, what a limit claim means precisely."
+    },
+    {
+      "course": "limits",
+      "section": "epsilon-delta",
+      "file": "limits/epsilon-delta.wav",
+      "narration": "What exactly are we claiming when we say a limit exists? The precise version is a challenge and a response. Someone names a tolerance epsilon around the limit value. We must answer with a distance delta, so that every x within delta of the point, other than the point itself, gives f of x within epsilon of the limit. For two x plus one approaching seven as x approaches three, the gap is exactly twice the distance from three, so delta equal to half of epsilon always works. On the left, with epsilon equal to one, the strip of half-width one half keeps the graph inside the band. This matters for evidence. Sample sine of pi over x at one over n, and every value is zero. Sample it at a different sequence, and every value is one. Each set of samples suggests a limit, but the function oscillates forever near zero and has none. That completes the chapter. Next, limits make instantaneous change definable, and we derive and compute that change."
+    },
+    {
+      "course": "derivatives",
+      "section": "difference-quotients",
+      "file": "derivatives/difference-quotients.wav",
+      "narration": "Limits let us define instantaneous change. This chapter derives that change from first principles and then builds the rules for computing it. Start with an average rate: how much a function changes over an interval, divided by the interval's length. On a graph, that is the slope of a secant line. For x squared starting at one, the average rate over an interval of length h simplifies to two plus h. Shrink the interval. Lengths one, one half, one tenth and one hundredth give slopes three, two and a half, two point one, and two point zero one. On the left, the secants swing towards a single line that just touches the curve: the tangent, with slope exactly two. That limit is the derivative. It is the instantaneous rate of change, and its units are output units per input unit. One caution: we cannot simply set h to zero, because the quotient becomes zero over zero. That is exactly why the derivative is defined as a limit. Next, where that limit can fail."
+    },
+    {
+      "course": "derivatives",
+      "section": "differentiability",
+      "file": "derivatives/differentiability.wav",
+      "narration": "Does every continuous function have a derivative? No, and the simplest counterexample is the absolute value function at zero. Its graph has a corner. Compute difference quotients there. From the right, every quotient equals one. From the left, every quotient equals minus one. The two one-sided limits disagree, so the derivative at zero does not exist, and there is no single tangent line. The function is still continuous at zero: the two pieces meet. Compare x squared, which also passes through the origin, but whose quotients shrink to zero from both sides, so its tangent there is the flat line y equals zero. The logical relationship runs one way. If a function is differentiable at a point, it must be continuous there, because a defined slope forces the values to join up. But continuity alone does not give a derivative. Models with switches, caps or absolute values produce exactly these corners, and the last chapter of the course handles them. Next, the rules that make derivatives quick to compute."
+    },
+    {
+      "course": "derivatives",
+      "section": "rules",
+      "file": "derivatives/rules.wav",
+      "narration": "Computing every derivative from the limit definition would be slow. A handful of rules, each proved once, do the work. The power rule says the derivative of x to the n is n times x to the n minus one. Sums and constant multiples are differentiated term by term, so three x to the fourth minus two x plus five has derivative twelve x cubed minus two. Products need care. The derivative of f times g is f prime g plus f g prime: each factor takes its turn being differentiated. Quotients follow a similar pattern, divided by the square of the denominator, wherever that denominator is not zero. A good habit is to check a result against a graph. The quotient rule gives the derivative of x over x squared plus one as one minus x squared, over x squared plus one squared. That is zero at plus and minus one, and on the left those are exactly where the function peaks at one half and bottoms out at minus one half. Next, functions inside functions."
+    },
+    {
+      "course": "derivatives",
+      "section": "chain-rule",
+      "file": "derivatives/chain-rule.wav",
+      "narration": "How fast is the machine heating up two hours into its warm-up? The temperature formula nests one function inside another, and the chain rule handles nesting. Follow the dependencies. Time t determines u, which is minus t over two. The value u determines w, which is e to the u. And w determines the temperature, twenty plus sixty times one minus w. Each link has its own local rate: minus one half, then e to the u, then minus sixty. The chain rule says the overall rate is their product. At two hours, u is minus one, so the middle factor is e to the minus one, about zero point three seven. Multiplying the three factors gives about eleven degrees per hour. Two checks make this trustworthy. The units multiply through to degrees per hour. And a finite difference, nudging time by a thousandth of an hour, gives eleven point zero three, agreeing to the precision we expect. The common error is evaluating an inner derivative at the wrong point. Next, the derivatives of exponentials, logarithms and trigonometric functions."
+    },
+    {
+      "course": "derivatives",
+      "section": "exp-log-trig",
+      "file": "derivatives/exp-log-trig.wav",
+      "narration": "Which derivatives come up again and again? Those of the exponential, the logarithm, and the trigonometric functions. The exponential is remarkable: its rate of change equals its own value. The natural logarithm has derivative one over x, for positive x. And sine differentiates to cosine, while cosine differentiates to minus sine. The plot shows why. Wherever the sine curve reaches a peak or a trough, it is momentarily flat, and that is exactly where the cosine curve crosses zero. At the origin, sine rises with slope one, and cosine there is one. The derivative's graph is a record of the original's slopes. Combined with the chain rule, these cover most models. The exponential of k x has derivative k times itself, which is where the warm-up rate came from. The logarithm of a function gives its derivative divided by itself: a relative rate of change. One trap. These formulas assume radians. Measure angles in degrees, and every trigonometric derivative picks up a factor of pi over one hundred and eighty. Next, curves that are not functions of x."
+    },
+    {
+      "course": "derivatives",
+      "section": "implicit-parametric",
+      "file": "derivatives/implicit-parametric.wav",
+      "narration": "What is the slope of a circle? A circle is not the graph of a single function, because most x values have two points above and below. But each point still has a tangent. Implicit differentiation finds it without solving for y. Differentiate both sides of x squared plus y squared equals twenty five, remembering that y depends on x, so the chain rule turns y squared into two y times y prime. Rearranging gives y prime equals minus x over y. At the point three, four, the slope is minus three quarters. On the left, that tangent is exactly perpendicular to the radius, as geometry says it must be. A second route traces the circle with a parameter: x is five cos t and y is five sin t. The slope is the rate of change of y divided by the rate of change of x, and at the same point it again gives minus three quarters. Both formulas divide by something that can vanish. Where y is zero, the tangent is vertical and has no slope. Next, derivatives of derivatives."
+    },
+    {
+      "course": "derivatives",
+      "section": "higher-related",
+      "file": "derivatives/higher-related.wav",
+      "narration": "What does the derivative of a derivative mean? Take position along a line, s of t equals t cubed minus six t squared plus nine t. Its derivative is velocity, three t squared minus twelve t plus nine, and the derivative of that is acceleration, six t minus twelve. The plot and the table read together. Velocity is zero at t equals one and t equals three, so the object stops and reverses at those moments. Acceleration changes sign at t equals two, which is where the velocity is lowest. Related rates use the same idea when several quantities change together. A spill spreads as a circle, so its area is pi r squared. Differentiate that relation with respect to time, and the chain rule gives the rate of change of area as two pi r times the rate of change of the radius. With a radius of four centimetres growing at half a centimetre per second, the area grows at four pi, about twelve and a half square centimetres per second. Always differentiate first, then substitute. Next, using a derivative to approximate."
+    },
+    {
+      "course": "derivatives",
+      "section": "linearisation",
+      "file": "derivatives/linearisation.wav",
+      "narration": "Why does the derivative matter beyond slopes? Because near a point, a smooth function looks like its tangent line, and lines are easy. The linearisation of f at a is f of a plus f prime of a times x minus a. For the square root near four, the value is two and the slope is one quarter, so the linearisation is two plus x minus four, over four. The table measures how good it is. At four point one, the error is a tenth of a thousandth. At five, about one hundredth. At nine, a quarter. The approximation is local. The tangent ignores the curve's bending, so the error grows roughly with the square of the distance, and chapter six will make that exact. The differential captures the same idea for small changes: the change in output is about the derivative times the change in input. That completes the chapter. You can compute derivatives, explain their units, and judge where linear approximation holds. Next, derivatives become tools for finding and justifying optimal choices."
+    },
+    {
+      "course": "analysis",
+      "section": "mean-value",
+      "file": "analysis/mean-value.wav",
+      "narration": "Derivatives describe a function point by point. This chapter uses them to analyse whole functions, and to tell candidate answers apart from justified optima. The mean value theorem is the bridge. If a function is continuous on a closed interval and differentiable inside it, then somewhere inside, the instantaneous slope equals the average slope over the interval. On the left, x cubed minus three x rises from zero to two between x equals zero and x equals two, an average slope of one. And at c equals two over root three, about one point one five, the tangent line is exactly parallel to that secant. Rolle's theorem is the special case where the endpoint values are equal, so somewhere the slope is zero. Every hypothesis matters. The absolute value function has equal values at minus one and one, but its corner at zero breaks differentiability, and its slope is never zero. The payoff is practical: a zero derivative on an interval means constant, and a positive one means increasing. Next, using derivative signs."
+    },
+    {
+      "course": "analysis",
+      "section": "monotonicity",
+      "file": "analysis/monotonicity.wav",
+      "narration": "Where is a function rising, and where is it falling? The sign of the derivative answers, and the mean value theorem proves it: if the slope is positive everywhere on an interval, then every average slope there is positive too. Points where the derivative is zero, or fails to exist, are called critical points. They are the only places a smooth function can switch between rising and falling. For x cubed minus three x, the derivative factors as three times x minus one times x plus one, so the critical points are minus one and one. A sign chart tracks the derivative between them. Positive to the left of minus one, so the function rises. Negative between minus one and one, so it falls. Positive again beyond one. Reading the switches, minus one is a local maximum and one is a local minimum, exactly where the orange derivative curve crosses zero on the left. But a critical point is only a candidate. A zero derivative alone does not make a peak or a dip. Next, curvature and the tests that use it."
+    },
+    {
+      "course": "analysis",
+      "section": "concavity-tests",
+      "file": "analysis/concavity-tests.wav",
+      "narration": "Once we have a critical point, how do we know what kind it is? The second derivative measures bending. Positive means the graph curves upward, like a cup. Negative means it curves downward, like a cap. Where the bending switches sign, the graph has an inflection point. Two tests use this. The first derivative test looks at the sign of the slope on either side: falling then rising means a minimum, rising then falling means a maximum. The second derivative test checks the bending at the point itself: cupped up means a minimum, capped down means a maximum. But when the second derivative is zero, the second test is silent. On the left are three functions that defeat it. X cubed, x to the fourth and minus x to the fourth all have zero first and second derivatives at the origin. Yet the first has an inflection, the second a minimum, and the third a maximum. Only the first derivative test, or looking at higher derivatives, tells them apart. Next, from local candidates to global answers."
+    },
+    {
+      "course": "analysis",
+      "section": "local-global-extrema",
+      "file": "analysis/local-global-extrema.wav",
+      "narration": "Is a local minimum the best answer? Not necessarily. A local extremum only beats its immediate neighbours. A global one beats every point in the domain. On a closed interval, a continuous function is guaranteed to have both a global maximum and a global minimum, and they can only occur in three kinds of place: where the derivative is zero, where it fails to exist, and at the endpoints. So the method is to list every candidate, evaluate the function at each, and compare. For x cubed minus three x on the interval from minus two to two and a half, the candidates are the two stationary points and the two endpoints. Their values are minus two, two, minus two, and about eight point one. The global maximum is at the right endpoint, where the derivative is not zero at all. The local maximum at minus one is beaten. And the global minimum of minus two is reached twice. Setting the derivative to zero alone would miss the endpoint answer completely. Next, a workshop problem with a real limit."
+    },
+    {
+      "course": "analysis",
+      "section": "bounded-production-cost",
+      "file": "analysis/bounded-production-cost.wav",
+      "narration": "Here is a real decision. At what rate should the workshop make chairs to keep the cost per chair as low as possible? Overhead of forty pounds an hour is shared among the chairs made, so faster production spreads it thinner. But running the machine faster wears it more, half a pound per chair for each extra chair per hour. Add two pounds of material, and the cost per chair is forty over q, plus half q, plus two. The machine can make between two and eight chairs an hour. Setting the derivative to zero gives q equal to root eighty, about eight point nine. That is outside the capacity, so it is not a valid answer. Comparing the feasible candidates, the endpoints, gives twenty three pounds at the slowest rate and eleven pounds at the fastest. So the optimum is to run at capacity. Notice how the domain decides whether an answer exists at all. If the limit were strictly below eight, the cost would approach eleven pounds without ever reaching it, and there would be no optimum. Next, a tool for awkward limits."
+    },
+    {
+      "course": "analysis",
+      "section": "lhopital",
+      "file": "analysis/lhopital.wav",
+      "narration": "Some limits resist simple algebra. L'Hôpital's rule handles many of them. If a limit has the form zero over zero, or infinity over infinity, you may replace the top and bottom by their derivatives, as long as the new limit exists. Sine x over x near zero becomes cos x over one, which tends to one. The graph on the left shows that limit: the function is undefined at zero, but its values head straight to one. Some limits need the rule twice. E to the x minus one minus x, all over x squared, gives one half after two applications, and computing it at a thousandth gives zero point five zero zero two. Now the misuses. Applied to a limit that is not an indeterminate form, the rule gives wrong answers: x plus one over x plus two at zero is one half by substitution, but the rule would say one. And sometimes the derivative ratio has no limit, while the original does. Then the rule is simply silent. Always check the form first. Next, solving the equations that optimisation produces."
+    },
+    {
+      "course": "analysis",
+      "section": "root-finding",
+      "file": "analysis/root-finding.wav",
+      "narration": "Optimisation often comes down to solving an equation: setting the derivative to zero. When that equation has no tidy solution, numerical methods take over. Bisection keeps an interval where the derivative changes sign, and halves it every step. It always converges, but slowly, gaining roughly one binary digit per step. Newton's method is faster. It follows the tangent of the derivative down to zero, using the second derivative as the slope. Starting from five chairs an hour, it reaches root eighty to six decimal places in five steps. But Newton's method needs a sensible start. From twenty, its very first step jumps to minus twenty, a meaningless production rate, and then it bounces between plus and minus twenty forever. And there is a deeper caution. Solving for a zero derivative finds every stationary point: minima, maxima and flat points alike. Its answer is a candidate that still needs the checks of this chapter. That completes the chapter. Next, integration answers the complementary question: how change accumulates."
+    },
+    {
+      "course": "integration",
+      "section": "riemann-sums",
+      "file": "integration/riemann-sums.wav",
+      "narration": "Integration answers the question that derivatives leave open: how much has accumulated? This chapter connects accumulation, signed area and antiderivatives, under explicit conditions. Start with the workshop's machine. Its power draw rises and falls over the shift, from three kilowatts up to five and back. If power were constant, energy would just be power times time. It is not, so cut the shift into short pieces, treat the power as constant on each, and add up power times duration. Each rectangle on the left is one such piece. With four pieces and midpoint heights, the total is about thirty four point four five kilowatt hours. With sixty four pieces it is thirty four point one eight seven. The sums close in on a single number, twenty four plus thirty two over pi, about thirty four point one nine. When every refinement gives the same limit, the function is integrable, and continuous functions on a closed interval always are. Next, what that limit means, and its units."
+    },
+    {
+      "course": "integration",
+      "section": "definite-integrals",
+      "file": "integration/definite-integrals.wav",
+      "narration": "What exactly does a definite integral measure? It is the limit of Riemann sums, and geometrically it is a signed area. Where the function is above the axis, the area counts as positive. Where it is below, it counts as negative. On the left, sine from zero to two pi has a hump of area two above the axis and a matching hump of area two below. The integral adds them with their signs, and gets zero. The total area between the curve and the axis is four. Neither number is wrong; they answer different questions, and the next sections return to that difference. Units come along automatically. The integral's units are the function's units times the input's units. Power in kilowatts, integrated over hours, gives kilowatt hours of energy. Velocity in metres per second, integrated over seconds, gives metres. The d x in the notation is not decoration: it is the width of each piece, and it carries the units. And swapping the limits flips the sign. Next, the theorem that makes integrals computable."
+    },
+    {
+      "course": "integration",
+      "section": "fundamental-theorem",
+      "file": "integration/fundamental-theorem.wav",
+      "narration": "Riemann sums are slow. The fundamental theorem of calculus turns integration into the reverse of differentiation. Let the upper limit move, and define the accumulation function: the amount accumulated from the start up to x. For the workshop, that is the energy used so far, E of t. The first part of the theorem says that the rate at which the accumulation grows is the current value of the integrand. Energy so far grows at exactly the current power. On the left, the green energy curve is steepest in the middle of the shift, exactly where the blue power curve peaks. The second part turns that into a method. If we know any function whose derivative is f, the integral is just that function's change from a to b. Here the energy has a formula, and evaluating it at eight gives thirty four point one nine kilowatt hours, the same as the Riemann sums approached. The intermediate values match numerical integration too. One condition: where the integrand jumps, the accumulation has a corner. Next, finding antiderivatives."
+    },
+    {
+      "course": "integration",
+      "section": "antiderivatives",
+      "file": "integration/antiderivatives.wav",
+      "narration": "Part two of the fundamental theorem needs an antiderivative: a function whose derivative is the integrand. If one exists, many do. Adding any constant does not change a derivative, so if x squared is an antiderivative of two x, so is x squared plus one, or minus one, or anything else. On the left are four of them: identical shapes, shifted up and down, with exactly the same slope at every x. On an interval, these are all of them, which is why indefinite integrals are written with plus C. In a definite integral the constant cancels. The integral of two x from zero to two is four plus C, minus zero plus C, which is four whatever C is. So any one antiderivative will do. The table lists the common ones, and every entry can be checked by differentiating. Notice the logarithm. The power rule's antiderivative divides by n plus one, which fails when n is minus one, and that is exactly the case the logarithm fills. Next, a method for integrals that are hidden chain rules."
+    },
+    {
+      "course": "integration",
+      "section": "substitution",
+      "file": "integration/substitution.wav",
+      "narration": "Some integrals are chain rules in disguise. Substitution undoes them. Look at the integral of two x times e to the x squared, from zero to one. The two x is exactly the derivative of the inner x squared. So set u equal to x squared. Then d u is two x d x, and the integrand becomes simply e to the u. The limits must move too. When x is zero, u is zero, and when x is one, u is one. The integral becomes e to the u from zero to one, which is e minus one, about one point seven one eight. The plot shows what happened. The two integrands look nothing alike, one starting flat and rising steeply, the other gently curving. Yet numerical integration of each gives the same one point seven one eight. The substitution stretches the horizontal axis and rescales the height to compensate exactly. The common mistake is to change the integrand to u but keep the old x limits. Either change the limits, or substitute back before evaluating. Next, the difference between net and total."
+    },
+    {
+      "course": "integration",
+      "section": "net-versus-total",
+      "file": "integration/net-versus-total.wav",
+      "narration": "Does an integral tell you how far something went, or where it ended up? Those are different questions. Take an object moving along a line with velocity t squared minus four t plus three. It moves forward for the first second, backward for the next two, then forward again. Integrating the velocity adds the forward pieces and subtracts the backward one. The result, four thirds of a metre, is the displacement: where the object finishes, relative to where it started. Integrating the absolute value of the velocity counts every piece as positive. The three pieces are each four thirds, so the distance travelled is four metres. To compute a total, find where the rate changes sign, integrate each piece separately, and add the sizes. In the workshop the same distinction appears with energy. If power can flow back into the supply, net energy and total energy drawn are different numbers, and a bill depends on which one is meant. Averages split the same way: an average velocity of one third, against an average speed of one. Next, averages in general."
+    },
+    {
+      "course": "integration",
+      "section": "average-value",
+      "file": "integration/average-value.wav",
+      "narration": "What single number best summarises a quantity that varies? Its average value: the integral divided by the length of the interval. Geometrically, it is the height of the rectangle with the same area as the region under the curve. For the shift, the energy is thirty four point one nine kilowatt hours over eight hours, so the average power is about four point two seven kilowatts. A machine drawing a steady four point two seven would use exactly the same energy, and at thirty pence per kilowatt hour that energy costs about ten pounds twenty six. For a continuous function, the average is not just a summary; the function actually takes that value somewhere. On the left, the power curve crosses its average twice, at about one and three quarter hours and again at about six and a quarter. That completes the chapter. You can explain a definite integral, apply the fundamental theorem under its conditions, and interpret accumulation with correct units. Next, the fundamental theorem motivates a choice: integrate analytically, or numerically, and how to trust the result."
+    },
+    {
+      "course": "integration-methods",
+      "section": "by-parts",
+      "file": "integration-methods/by-parts.wav",
+      "narration": "This chapter is about choosing how to integrate, and then asking whether the answer is defined and whether a number from a computer can be trusted. The first tool is integration by parts. The product rule says the derivative of u times v is u prime v plus u v prime. Integrate both sides and rearrange, and you get: the integral of u d v equals u v minus the integral of v d u. It does not finish the job; it swaps one integral for another. The art is picking u as the factor that gets simpler when differentiated. For x times e to the x, take u equal to x. Then d u is just d x, v is e to the x, and the answer is x minus one, times e to the x. Never trust an antiderivative you have not checked. Differentiate it: the product rule gives back x e to the x exactly. On the left, the orange curve is lowest exactly where the blue one crosses zero, as it must be. And the definite integral from zero to one is one, which quadrature confirms. Next, rational functions."
+    },
+    {
+      "course": "integration-methods",
+      "section": "partial-fractions",
+      "file": "integration-methods/partial-fractions.wav",
+      "narration": "How do you integrate one over x squared minus one? No substitution makes it obvious, but algebra does. Factor the denominator into x minus one times x plus one, and look for constants A and B so that the fraction equals A over x minus one plus B over x plus one. Clear the denominators and set x equal to one, then minus one: A is a half, and B is minus a half. On the left you can see the split. The blue curve is the original function; it is the orange piece minus the green piece, and each piece integrates to a logarithm. So the antiderivative is a half log of x minus one, minus a half log of x plus one. Between two and three that gives a half log of one and a half, about zero point two zero two seven, the same number quadrature returns to sixteen digits. Two conditions matter. The degree on top must be lower than on the bottom, or you divide first. And the interval must stay away from the roots, where the integrand is not even defined. Next, substitutions with sines and cosines."
+    },
+    {
+      "course": "integration-methods",
+      "section": "trig-sub",
+      "file": "integration-methods/trig-sub.wav",
+      "narration": "Some integrals contain a square root of a squared constant minus x squared. The trick is to let x be a sine. Then one minus x squared becomes one minus sine squared, which is cosine squared, and the root disappears. Take the integral of the square root of one minus x squared from zero to one. With x equal to sine theta, d x is cosine theta d theta, the limits become zero and pi over two, and the integral becomes the integral of cosine squared, which is pi over four. The picture explains why. The curve is the upper unit circle, so the area is a quarter of a disc of radius one: pi over four, about zero point seven eight five. With four techniques in hand, the practical skill is choosing. The table reads the shape of the integrand: a function of g times g prime calls for substitution, a product of unlike types for parts, a rational function for partial fractions, a root for trig. And some integrands, like e to the minus x squared, have no elementary antiderivative at all. Next, integrals over unbounded intervals."
+    },
+    {
+      "course": "integration-methods",
+      "section": "improper",
+      "file": "integration-methods/improper.wav",
+      "narration": "Can an infinitely long region have finite area? Sometimes, and the definition decides when. An integral to infinity is not computed directly; it is the limit of ordinary integrals out to R, as R grows. If that limit is a finite number, the integral converges. Compare one over x squared and one over x on the left. They look similar: both start at one and sink toward zero. But the integral of one over x squared out to R is one minus one over R, which settles at one. The integral of one over x is the log of R, which keeps growing: two point three at ten, four point six at a hundred, six point nine at a thousand, and on without bound. One over x simply does not fall fast enough. The general rule is the p test: one over x to the p converges at infinity exactly when p is bigger than one, and near zero exactly when p is smaller than one. So one over root x has finite area two on zero to one. Next, how to decide convergence when there is no formula."
+    },
+    {
+      "course": "integration-methods",
+      "section": "comparison",
+      "file": "integration-methods/comparison.wav",
+      "narration": "What do you do when you cannot find an antiderivative, but still need to know whether an improper integral converges? Compare. If a non negative function sits below one whose integral converges, its own integral must converge too. Take e to the minus x squared from one to infinity. For x at least one, x squared is at least x, so e to the minus x squared is below e to the minus x, the orange curve, whose integral is one over e. That settles convergence, and quadrature then gives zero point one three nine. Comparison works the other way as well: above a divergent integral means divergent. Now the warning in the table. The integral of x to the minus one point one converges, to ten. But stop at R equal to a thousand and you have only four point nine nine, half the answer. Meanwhile one over x, which diverges, reads six point nine one at the same cutoff. Up close, the convergent and divergent columns look alike. A finite cutoff cannot tell them apart; only the reasoning can. Next, computing integrals numerically, with error bounds."
+    },
+    {
+      "course": "integration-methods",
+      "section": "quadrature",
+      "file": "integration-methods/quadrature.wav",
+      "narration": "When there is no formula, approximate. Quadrature cuts the interval into panels, replaces the function on each by something easy, and adds. The trapezoid rule joins neighbouring points with straight lines. On the left, four trapezoids under sine x from zero to pi. The straight tops cut under the curve, so the sum is one point eight nine six instead of two. Simpson's rule fits parabolas through triples of points and, with the same four panels, gets two point zero zero four six. The table shows what doubling the number of panels does. The trapezoid error falls by a factor of four each time; Simpson's by sixteen. That is what the error bounds predict: trapezoid error proportional to h squared times the size of the second derivative, Simpson's to h to the fourth times the fourth derivative. At four panels the bounds are zero point one six and zero point zero zero six six, and the actual errors sit below them. But read the bounds as conditional. They assume those derivatives exist and are bounded. Next, what happens when they are not."
+    },
+    {
+      "course": "integration-methods",
+      "section": "adaptive",
+      "file": "integration-methods/adaptive.wav",
+      "narration": "Can you trust a number from an integrator that reports a tiny error estimate? Only conditionally. An adaptive integrator compares two rules on each panel, treats their difference as an error estimate, and splits the panels that fail the tolerance. That is efficient, but it only knows what its samples show it. On the left is a spike of width about four thousandths, centred at zero point three seven. Eleven equally spaced samples all land where the function is essentially zero, so Simpson's rule returns ten to the minus ninety nine. With a hundred panels, one sample happens to hit the peak and the answer is nearly four times too big. Adaptive quad, given no hint, returns six times ten to the minus seventeen and reports an error of ten to the minus sixteen: confident and wrong. Told where the spike is, it returns the right value. That completes the chapter. You can choose an integration method, diagnose convergence, and read accuracy claims as conditional. Next, approximating whole functions, which needs convergence and controlled remainders."
+    },
+    {
+      "course": "series",
+      "section": "sequences",
+      "file": "series/sequences.wav",
+      "narration": "This chapter is about convergence: when does an infinite process have a definite answer, and when can a finite piece of an expansion be trusted? Start with sequences. A sequence converges to L if its terms get, and stay, as close to L as you like. Iterative algorithms produce sequences. Press cosine repeatedly on a calculator, starting from one, and the values overshoot, undershoot, and settle at zero point seven three nine. That number is a fixed point: its cosine is itself. The table compares two iterations. The cosine iteration multiplies its error by about zero point six seven each step, which is linear convergence, so it needs around thirty steps for six digits. Newton's method for the square root of two squares its error each step, which is quadratic convergence: the number of correct digits roughly doubles, and five steps reach machine precision. One warning. Small steps mean the sequence is slowing down; they do not by themselves prove it has a limit, or that the limit is the one you wanted. Next, adding up infinitely many terms."
+    },
+    {
+      "course": "series",
+      "section": "partial-sums",
+      "file": "series/partial-sums.wav",
+      "narration": "What does it mean to add infinitely many numbers? Only one thing: form the partial sums, the total of the first n terms, and ask whether that sequence converges. If it does, its limit is the sum of the series. There is one quick necessary condition. If a series converges, its terms must tend to zero. So a series whose terms do not shrink, like minus one to the k, cannot converge. But the condition is not sufficient, and the harmonic series is the standard warning. Its terms, one over k, go to zero. Yet on the left, its partial sums keep climbing: about seven and a half after a thousand terms, about fourteen after a million. They grow like the natural log of n, slowly but without bound, so the series diverges. Compare the sum of one over k squared. Its terms also go to zero, and its partial sums level off at pi squared over six, about one point six four five. The difference is how fast the terms shrink. And the harmonic sum's slow growth is exactly what fools a computer. Next, tests that decide."
+    },
+    {
+      "course": "series",
+      "section": "tests",
+      "file": "series/tests.wav",
+      "narration": "Watching partial sums cannot settle convergence, so we need tests that can. Two families of series serve as yardsticks. A geometric series, a sum of powers of r, converges exactly when the size of r is less than one. A p series, one over k to the p, converges exactly when p is bigger than one. Most other tests compare with these. The comparison test says that a non negative series below a convergent one converges too. One over k squared plus one is below one over k squared, so its series converges; its sum turns out to be about one point zero seven seven. The ratio test looks at how each term compares with the one before. If that ratio tends to a limit below one, the series behaves like a geometric series and converges. For k over two to the k, the ratio tends to a half, and the sum is two. On the left, all three partial sums level off at their limits. One caution: a ratio limit of exactly one decides nothing, since the harmonic series and one over k squared both give it. Next, series whose signs alternate."
+    },
+    {
+      "course": "series",
+      "section": "alternating",
+      "file": "series/alternating.wav",
+      "narration": "What changes when the terms of a series alternate in sign? Cancellation can make a series converge that would diverge otherwise. A series converges absolutely if the sizes of its terms have a finite sum, and conditionally if it converges only thanks to the signs. The alternating series test gives conditions: the signs alternate, the sizes decrease, and the terms tend to zero. The alternating harmonic series, one minus a half plus a third and so on, meets them, and its sum is the natural log of two. Since the plain harmonic series diverges, this convergence is conditional. On the left, the partial sums zigzag above and below the limit, each step shorter than the last. That zigzag gives a free error bound: the error is at most the first term you left out. The table checks it. After ten terms the error is zero point zero four eight, under the bound of zero point zero nine one. But the bound also shows the cost: four decimal places would take about ten thousand terms. Next, approximating functions by polynomials."
+    },
+    {
+      "course": "series",
+      "section": "taylor",
+      "file": "series/taylor.wav",
+      "narration": "How well can a polynomial stand in for a function near a point? The Taylor polynomial of degree n matches the function's value and first n derivatives there. For e to the x about zero, every derivative is e to the x, which equals one at zero, so the Taylor polynomial is one plus x plus x squared over two factorial, and so on. On the left, T one is the tangent line, and each higher degree hugs the curve over a wider range. A polynomial approximation is only useful with an error bound, and Taylor's theorem gives one, under a hypothesis: the next derivative must exist on the interval. Then the remainder equals that derivative at some unknown point c, times x to the n plus one, over n plus one factorial. At x equal to one, e to the c is less than three, so the error is at most three over n plus one factorial. With n equal to six the polynomial gives two point seven one eight zero five six, and the actual error, two times ten to the minus four, sits under the guaranteed bound. Next, what happens when n goes to infinity."
+    },
+    {
+      "course": "series",
+      "section": "power-series",
+      "file": "series/power-series.wav",
+      "narration": "If a Taylor polynomial is good, is the infinite series even better? Only where it converges. A power series converges on an interval centred at its base point, with a radius set by the coefficients. Inside the radius it converges absolutely; outside it diverges; and the two endpoints must be checked separately. Take the series for the natural log of one plus x: x minus x squared over two plus x cubed over three, and so on. The ratio test gives the size of x, so the radius is one. On the left, the partial sums follow the log curve closely inside that radius, and swing wildly apart just past x equals one. The table makes it concrete. At a half, ten terms already give four correct digits. At one and a half, forty terms give minus a hundred and sixty thousand. At the endpoints, x equal to one gives the alternating harmonic series, which converges to log two, and x equal to minus one gives the negative harmonic series, which diverges. The function exists for all x above minus one; its series does not. Next, a deeper gap."
+    },
+    {
+      "course": "series",
+      "section": "smoothness",
+      "file": "series/smoothness.wav",
+      "narration": "If a function has derivatives of every order, must it equal its Taylor series? No, and this is the subtlest point of the chapter. Consider e to the minus one over x squared, set to zero at zero. It is perfectly smooth, but it is so flat at the origin that every derivative there is zero. So its Taylor series about zero is zero plus zero x plus zero x squared, the zero function. That series converges for every x, yet it agrees with the function only at the single point zero. On the left, the function climbs to zero point three seven at x equal to one, while the series says zero. A second example: one over one plus x squared is smooth on the whole real line, yet its series converges only for x between minus one and one. So a series must be shown to converge, and shown to converge to the function. That completes the chapter. You can distinguish sequence and series convergence, justify a finite Taylor approximation, and identify where an expansion is valid. Next, Taylor models extend from one input to several inputs changing at once."
+    },
+    {
+      "course": "multivariable",
+      "section": "surfaces",
+      "file": "multivariable/surfaces.wav",
+      "narration": "This chapter asks what a derivative means when a quantity depends on several inputs at once, and why checking one coordinate at a time is not enough. Start with the workshop. Chairs per shift depend on two inputs: labour hours and machine hours. A simple model is Q equals two times the square root of L times M. The standard shift, sixteen labour hours and nine machine hours, makes twenty four chairs, the same three an hour as in chapter one. The graph of Q is a surface over the input plane, but a flat picture is often clearer: the level sets. Each curve on the left is every mix of inputs that makes the same number of chairs. Along the orange curve, output is twenty four: sixteen and nine, or thirty six labour hours with only four machine hours. Crossing from curve to curve changes the output. The table samples the surface on a grid. Continuity carries over with one important change. In two dimensions a point can be approached from infinitely many directions, and the limit must agree along all of them. Next, what happens when it does not."
+    },
+    {
+      "course": "multivariable",
+      "section": "paths",
+      "file": "multivariable/paths.wav",
+      "narration": "How fast does output change if you add one input and hold the other fixed? That is a partial derivative: freeze every input but one, and differentiate in the one that moves. For the workshop at the standard shift, one more labour hour adds about three quarters of a chair, and one more machine hour adds about one and a third. Each is a slope along a single grid line of the input plane. Now the warning. Take x y over x squared plus y squared, defined as zero at the origin. Along any straight line y equals m x, the function is constant: zero along the axes, a half along the diagonal, minus a half along the other diagonal. So approaching the origin along different lines gives different values, and the function has no limit there. It is not even continuous. Yet along both axes it is identically zero, so both partial derivatives at the origin exist and equal zero. Partial derivatives look in exactly two directions, and they can be perfectly well behaved while the function misbehaves in every other direction. Next, partial derivatives of partial derivatives."
+    },
+    {
+      "course": "multivariable",
+      "section": "mixed",
+      "file": "multivariable/mixed.wav",
+      "narration": "Does the order in which you take partial derivatives matter? Differentiate in x then y, or in y then x: these are the mixed partials. For almost every formula you will meet, they agree. Take x cubed y squared plus sine of x y. Working through both orders gives the same expression, and at the point one, two both equal nine point seven six five three, which a finite difference confirms. For the workshop, both mixed partials of Q equal one over twenty four at the standard shift: an extra machine hour makes labour hours slightly more productive, and the other way round, by the same amount. Clairaut's theorem says why: if the mixed partials are continuous near a point, they are equal there. The condition matters. For x y times x squared minus y squared, over x squared plus y squared, the slice f x along the y axis is minus y, with slope minus one, and the slice f y along the x axis is x, with slope plus one. So the two orders give minus one and plus one. The mixed partials exist, but are not continuous at the origin. Next, what differentiability means in two dimensions."
+    },
+    {
+      "course": "multivariable",
+      "section": "tangent-plane",
+      "file": "multivariable/tangent-plane.wav",
+      "narration": "What does it take for a function of two inputs to be differentiable? Not just partial derivatives. It needs a single linear approximation, the tangent plane, that works in every direction at once, with an error that shrinks faster than the step. At the standard shift, the tangent plane says output changes by zero point seven five times the change in labour hours, plus one point three three times the change in machine hours. On the left, slice the surface along a swap: add h labour hours and remove h machine hours. The plane predicts a straight line, twenty four minus seven twelfths of h. The true output bends below it. The table measures the gap. Halve the step and the error falls by about four, so error over h squared stays near zero point zero nine. That is what differentiability guarantees. Partial derivatives alone do not: the previous example had both partials at the origin and was not even continuous there. A useful sufficient condition is that the partials exist and are continuous nearby. Next, rates of change in directions other than the axes."
+    },
+    {
+      "course": "multivariable",
+      "section": "gradient",
+      "file": "multivariable/gradient.wav",
+      "narration": "Which way should you change the inputs to raise output fastest? The gradient answers it. Collect the partial derivatives into a vector: at the shift, that is zero point seven five and one point three three. For a differentiable function, the rate of change in any unit direction is the dot product of the gradient with that direction. Adding labour and machine time equally gives one point four seven chairs per hour of change. On the left, three unit directions are drawn from the shift. The blue arrow adds labour only, at rate zero point seven five. The green arrow runs along the level curve, where output does not change, so its rate is zero. The pink arrow points along the gradient itself, and gives the largest rate, the gradient's length, one point five three. Because the rate equals the gradient's length times the cosine of the angle, the gradient points straight uphill, and it is perpendicular to the level set. Its negative points downhill, which is the idea behind gradient descent in chapter ten. All of this assumes differentiability. Next, derivatives of vector valued maps."
+    },
+    {
+      "course": "multivariable",
+      "section": "chain-rule",
+      "file": "multivariable/chain-rule.wav",
+      "narration": "How does a change in one quantity ripple through a chain of models? For maps between several variables, the derivative is the Jacobian: the matrix of every output's partial derivative with respect to every input. A map from n inputs to m outputs has an m by n Jacobian. The chain rule then says: to differentiate a composition, multiply the Jacobians, in order. The shapes must chain, and checking them catches most mistakes. Take overtime at the workshop. Each overtime hour adds two labour hours, two people, and one machine hour. That path has a two by one Jacobian, two over one. The output's gradient is one by two. Multiply them: zero point seven five times two, plus one point three three times one, gives two point eight three chairs per overtime hour. On the left, the orange velocity arrow and the pink gradient arrow are the two factors, and the dots cross the level curves at about that rate. A finite difference agrees to four digits. The last row of the table previews chapter eight: the polar coordinate map has a two by two Jacobian whose determinant is r. Next, gradients of common formulas."
+    },
+    {
+      "course": "multivariable",
+      "section": "least-squares",
+      "file": "multivariable/least-squares.wav",
+      "narration": "Most gradients in practice come from three rules. The gradient of a linear function a transpose w is just a. The gradient of a quadratic form w transpose A w is A plus A transpose, times w, or two A w when A is symmetric. And the chain rule handles the rest. The most important case is least squares: the sum of squared residuals between a model's predictions X w and data y. Expanding the square and applying the first two rules gives the gradient: two X transpose times the residual. Check the shapes. With four observations and two parameters, X is four by two and the residual is four by one, so X transpose times the residual is two by one, the same shape as w, as a gradient must be. On the left are the workshop's chairs by hour. The guess intercept two, slope two, shown in pink, has a squared error of five point one, and its gradient is minus four, minus nineteen, which says to increase the slope. At intercept zero point two five and slope two point nine the gradient is zero, and the error is zero point zero five. Next, checking a gradient numerically."
+    },
+    {
+      "course": "multivariable",
+      "section": "checking",
+      "file": "multivariable/checking.wav",
+      "narration": "How do you know a gradient is right? There are three ways to compute derivatives, with different roles. Symbolic differentiation produces formulas. Automatic differentiation, used by machine learning libraries, applies the chain rule to the operations in a program and gives exact derivatives of the code. Finite differences evaluate the function at nearby points; they are approximate, but need nothing except the function, which makes them the standard check. Step size matters. On the left, the error of estimating zero point seven five, the labour partial, shrinks as the step shrinks, until rounding takes over, because subtracting two nearly equal numbers loses digits. The forward difference does best near ten to the minus seven, the central one near ten to the minus four. The code compares the least squares gradient with central differences: they agree to about ten to the minus nine. Drop the factor two and the check catches it at once. That completes the chapter. You can interpret partials and tangent planes, propagate sensitivities through Jacobians, and check a derivative. Next, Jacobians also explain how coordinate changes affect accumulated quantities."
+    },
+    {
+      "course": "multiple-integrals",
+      "section": "double-integrals",
+      "file": "multiple-integrals/double-integrals.wav",
+      "narration": "This chapter extends accumulation from intervals to regions, and asks how a change of coordinates changes the arithmetic. Start with a panel two metres by one metre, whose density is not constant: four plus x squared y kilograms per square metre, heavier towards one corner. What is its mass? Do what we did in one dimension. Cut the panel into cells, take the density at each cell's midpoint as if it were constant there, multiply by the cell's area, and add. On the left, eight cells, with the orange dots where the density is sampled and coloured curves where it equals five, six and seven. Eight cells give nine point three one kilograms. As the grid is refined the sums close in on twenty eight thirds, about nine point three three, and each doubling of the grid in both directions cuts the error about four times. The limit is the double integral. Every term is a density times an area, so the answer is in kilograms. And integrating the constant one gives the area of the region itself. Next, how to actually compute a double integral, one variable at a time."
+    },
+    {
+      "course": "multiple-integrals",
+      "section": "iterated",
+      "file": "multiple-integrals/iterated.wav",
+      "narration": "How do you compute a double integral without summing millions of cells? Integrate one variable at a time. For the panel, hold x fixed and integrate the density in y from zero to one: that gives four plus x squared over two, the mass per unit length of a thin strip. Then integrate those strips in x from zero to two. The result is twenty eight thirds, as before. Do it in the other order, strips in x first, and you get the same twenty eight thirds. Fubini's theorem says when this is guaranteed: if the integral of the absolute value of f is finite. Continuous functions on bounded rectangles always qualify. Now a function that does not. On the unit square, take x squared minus y squared, over x squared plus y squared, squared. Integrating y first leaves one over one plus x squared, the blue curve, with area pi over four. Integrating x first leaves the pink curve, with area minus pi over four. Quadrature confirms both, so this is not an algebra slip. Near the origin the function is so large that its absolute value has infinite integral. Next, regions that are not rectangles."
+    },
+    {
+      "course": "multiple-integrals",
+      "section": "regions",
+      "file": "multiple-integrals/regions.wav",
+      "narration": "What changes when the region is not a rectangle? The inner limits are no longer constants; they depend on where the outer variable is. Take the triangle where x runs from zero up to y, and y up to one. Slice it with vertical strips: for each x, y runs from the diagonal up to one. Or slice it with horizontal strips: for each y, x runs from zero to the diagonal. Both descriptions cover the triangle exactly once, and both give its area, a half. Now integrate e to the y squared over this triangle. With vertical strips, the inner integral is the integral of e to the y squared in y, which has no elementary antiderivative. With horizontal strips, the inner integral is in x, where e to the y squared is a constant: it gives y times e to the y squared. That integrates by substitution to e minus one over two, about zero point eight five nine, and numerical integration in the first order agrees. The lesson is practical: draw the region, then choose the order. Swapping the order means redescribing the region, never just swapping the limits. Next, three dimensions."
+    },
+    {
+      "course": "multiple-integrals",
+      "section": "triple",
+      "file": "multiple-integrals/triple.wav",
+      "narration": "How do you find the mass of a solid whose density varies? Add density times volume over tiny boxes, and take the limit: a triple integral. The limits describe the solid as nested inequalities, as in the plane. Take a tetrahedral offcut: the corner of a cube cut off by the plane x plus y plus z equals one, in metres. x runs from zero to one; for each x, y runs up to one minus x; and for each of those, z runs up to one minus x minus y. Its volume is one sixth of a cubic metre. Suppose the density is five hundred times one plus z, so the material is denser higher up. A good way to see the integral is by slices. At height z the solid's cross section is a triangle of area one minus z squared over two. Multiply by the density at that height, and the curve on the left is mass per metre of height. Its area is the mass, one hundred and four kilograms, against eighty three for uniform density. The centre of mass sits at zero point two eight metres, higher than for the uniform solid. Next, changing coordinates."
+    },
+    {
+      "course": "multiple-integrals",
+      "section": "polar",
+      "file": "multiple-integrals/polar.wav",
+      "narration": "Why do polar coordinates come with an extra r? Because equal steps in r and theta do not make equal areas. On the left, two cells have the same radial width and the same angle, but the one further out is three times as large: its arc is longer. In general, when you change variables, the area of a small cell is multiplied by the absolute value of the Jacobian determinant of the map. For the polar map, x equals r cos theta, y equals r sin theta, that determinant is exactly r. So the area element is r d r d theta. This is the Jacobian from chapter seven, now measuring how a map stretches area. It pays off on discs. Integrating e to the minus x squared plus y squared over the unit disc is awkward in x and y. In polar coordinates it becomes e to the minus r squared, times r, and the r makes it an easy substitution: pi times one minus e to the minus one, about one point nine eight six. A Cartesian numerical integration agrees. Leave out the r and you get four point six nine, more than double. Next, integrals over the whole plane."
+    },
+    {
+      "course": "multiple-integrals",
+      "section": "improper",
+      "file": "multiple-integrals/improper.wav",
+      "narration": "What does it mean to integrate over the whole plane? As in one dimension, it is a limit, now over growing regions. And there is a new question: does the answer depend on the shape of the regions you grow? If the integral of the absolute value is finite, it does not. Take e to the minus x squared plus y squared. Over discs of radius R the integral is pi times one minus e to the minus R squared, the blue curve, which tends to pi. Over squares it is the square of the one dimensional integral, the pink curve, and it tends to pi too, because the integrand is positive. So the one dimensional integral of e to the minus x squared, which has no elementary antiderivative, is exactly root pi. Dimension changes convergence as well. One over r over the unit disc converges, to two pi, because the area factor r cancels the singularity, while one over x on zero to one diverges. And the order dependent example from section two fails because its absolute value is not integrable. That completes the chapter. Next, local models of change support multivariable optimality."
+    },
+    {
+      "course": "optimality",
+      "section": "feasible",
+      "file": "optimality/feasible.wav",
+      "narration": "This chapter asks how to recognise a minimum, how to tell a local answer from a global one, and how to write a problem so that it can be solved without changing what it means. Every optimisation problem has two parts: an objective to minimise and a feasible set of allowed choices. Return to the workshop's cost per chair. Without limits, the cheapest rate is about eight point nine four chairs an hour. But the machine can only make eight. On the feasible set, rates up to eight, the cost keeps falling all the way to the boundary, so the best feasible choice is exactly eight, at eleven pounds a chair. The slope there is not zero, and that is fine: the minimum is on the boundary. Before solving, ask whether a minimum exists. The infimum is the greatest lower bound; it is a minimum only if a feasible point reaches it. e to the x gets as close to zero as you like and never reaches it. x cubed has no lower bound at all. Weierstrass's theorem gives a guarantee: a continuous objective on a closed, bounded, nonempty set always attains its minimum. Next, local models of curvature."
+    },
+    {
+      "course": "optimality",
+      "section": "hessian",
+      "file": "optimality/hessian.wav",
+      "narration": "A tangent plane captures slope. What captures curvature? The Hessian, the matrix of second partial derivatives. It supplies the quadratic term of the Taylor model: half of h transpose, times the Hessian, times h. For the workshop output at the standard shift, the Hessian has minus zero point zero two three and minus zero point zero seven four on the diagonal, and zero point zero four two off it, the same in both places because the mixed partials are continuous. Return to chapter seven's slice, swapping labour for machine hours. The orange line is the linear model. Adding the quadratic term, minus zero point zero nine times h squared, gives the pink curve, which follows the true output far more closely. The table measures it. At a step of one, the linear error is zero point zero nine three; the quadratic error is zero point zero zero two four. And that minus zero point zero nine is exactly the error over h squared we measured in chapter seven: the Hessian explains it. One eigenvalue of this Hessian is zero. Scaling both inputs together scales output exactly, so in that direction there is no curvature at all. Next, where to look for minima."
+    },
+    {
+      "course": "optimality",
+      "section": "critical",
+      "file": "optimality/critical.wav",
+      "narration": "Where can a minimum be? If a smooth function has a local minimum at an interior point, the tangent plane there must be flat: the gradient is zero. Otherwise some direction would go downhill. Points where the gradient vanishes are called critical points, and they are the candidates. Take x cubed minus three x plus y squared. Setting the gradient to zero gives three x squared minus three equals zero and two y equals zero, so the candidates are one, zero and minus one, zero. On the left, the level sets show what they are. Around one, zero, at height minus two, the blue level set forms a closed loop: a local minimum. At minus one, zero, the orange level set at height two crosses itself: a saddle, uphill in one direction and downhill in another. And because x cubed is unbounded below, the function has no global minimum at all, even though it has a local one. So the first order condition is necessary but not sufficient. It also only applies in the interior: the cost per chair's boundary minimum had a nonzero slope. Next, how to classify the candidates."
+    },
+    {
+      "course": "optimality",
+      "section": "second-order",
+      "file": "optimality/second-order.wav",
+      "narration": "Once you have a critical point, how do you tell a minimum from a saddle? Look at the Hessian's eigenvalues, which describe the shape of the quadratic model. All positive means a bowl: a strict local minimum. All negative means a dome: a local maximum. Mixed signs mean a saddle. For the previous example, the Hessian at one, zero is diagonal with six and two, a minimum; at minus one, zero it has minus six and two, a saddle. There is also a necessary condition: at any local minimum, the Hessian must be positive semidefinite, so a single negative eigenvalue rules a minimum out. The hard case is a zero eigenvalue. Then the quadratic model is flat in some direction, and it cannot see what happens there. On the left are slices that all have zero curvature at the origin except x squared. x to the fourth is still a minimum; minus x to the fourth is a maximum; x cubed is neither. So x to the fourth plus y squared and minus x to the fourth plus y squared share the same Hessian, and only one has a minimum. Next, a structure that makes local answers global."
+    },
+    {
+      "course": "optimality",
+      "section": "convex",
+      "file": "optimality/convex.wav",
+      "narration": "Is there a kind of problem where a local answer is automatically global? Yes: convex problems. A set is convex if the straight segment between any two of its points stays inside. A function is convex if every chord lies on or above its graph, like the pink chord on the left. For differentiable functions, this is the same as saying every tangent lies below the graph, like the two green tangents. For twice differentiable functions, it is the same as a positive semidefinite Hessian everywhere. The cost per chair has second derivative eighty over q cubed, positive for every positive rate, so it is convex there. Why does this matter so much? The tangent inequality says the function is everywhere at least its tangent value. At a point where the gradient is zero, the tangent is flat, so no point anywhere can do better. A local minimum of a convex function on a convex set is a global one. Two cautions. Convexity holds on a set, here positive rates only. And the workshop output is concave, not convex: maximising it is the well behaved problem. Next, existence and uniqueness."
+    },
+    {
+      "course": "optimality",
+      "section": "existence",
+      "file": "optimality/existence.wav",
+      "narration": "Convexity tells you a local minimum is global. Does it tell you a minimum exists, and that there is only one? No, and the gap matters in practice. There are three strengths. Convex allows flat pieces. Strictly convex forbids them: every chord lies strictly above the graph. Strongly convex goes further and bounds the curvature away from zero. Each says something different. On the left, e to the x, in pink, is strictly convex, but it decreases forever toward zero without reaching it, so there is no minimiser at all. Strict convexity only promises at most one. x squared, in blue, is strongly convex, with curvature at least two everywhere, and strong convexity guarantees that exactly one minimiser exists. The green function is convex but flat on the whole interval from minus one to one: every point there is a minimiser. A solver asked to minimise it will return one of them, and which one depends on where it started. So before reporting a solution as the answer, check what the problem's convexity actually guarantees: existence, uniqueness, both, or neither. Next, writing problems in convex form."
+    },
+    {
+      "course": "optimality",
+      "section": "formulation",
+      "file": "optimality/formulation.wav",
+      "narration": "How do you write a problem so that a solver can guarantee a global answer? Make it convex: a convex objective, inequality constraints written as convex functions less than or equal to zero, and equality constraints that are affine, meaning linear plus a constant. Here is a workshop problem. Labour costs twenty pounds an hour and machine time thirty. What is the cheapest way to make twenty four chairs? Stated literally, output must equal twenty four, which is a curve in the input plane, and a curve is not a convex set. But if we ask for at least twenty four chairs, the feasible set is everything on or above that curve, shown on the left, and that set is convex. The cost lines are straight. Slide them down until one just touches the feasible set: at about fourteen point seven labour hours and nine point eight machine hours, costing five hundred and eighty eight pounds. Was relaxing the equality legitimate? Yes, because cost rises with both inputs, so no cheapest plan would make more than it needs. That argument has to be made, not assumed. Next, quadratic models and a reformulation trick."
+    },
+    {
+      "course": "optimality",
+      "section": "quadratic",
+      "file": "optimality/quadratic.wav",
+      "narration": "What do the best behaved problems look like? Convex quadratics: a positive definite matrix, a linear term, and a constant. They have exactly one minimiser, found by solving a linear system. Least squares is the main example. Its Hessian is two X transpose X, which here has eigenvalues one point two and sixty six point eight, both positive, so the workshop fit from chapter seven has a unique minimiser, intercept zero point two five and slope two point nine. On the left, its level sets are nested ellipses, long and thin because the curvature differs so much between directions. Chapter ten will show why that matters for solvers. Not every useful objective is smooth. Suppose you want the line whose worst residual is smallest. A maximum has corners. The epigraph trick removes them: add a variable t, minimise t, and require every residual to lie between minus t and t. That is a linear program. Its answer, the purple point, differs from least squares: a smaller worst residual, a larger total. That completes the chapter. Next, optimality conditions define what numerical solvers seek, and what their diagnostics mean."
+    },
+    {
+      "course": "numerical-optimisation",
+      "section": "descent",
+      "file": "numerical-optimisation/descent.wav",
+      "narration": "This chapter is about how iterative methods use derivatives and curvature, and how to judge the answer they return. Almost every optimiser repeats one update: from the current point, choose a direction and a step length, and move. A direction is a descent direction if it makes an obtuse angle with the gradient, that is, if the gradient dotted with it is negative. Then a small enough step along it is guaranteed to reduce f. The chapter's test problem is a bowl, one half of x squared plus ten y squared, with its minimum at the origin, starting from three, one and a half. The gradient there is three, fifteen: the bowl is ten times steeper in y. On the left, the pink arrow is minus the gradient, the steepest descent direction. Notice it points mostly downward, not at the centre. The green arrow is Newton's direction, which does point at the centre. Moving left is descent, but only barely; moving up is uphill. When should the iteration stop? The honest test is a small gradient. Small steps alone only show the method is slowing down. Next, how big a step can be."
+    },
+    {
+      "course": "numerical-optimisation",
+      "section": "step-size",
+      "file": "numerical-optimisation/step-size.wav",
+      "narration": "Gradient descent takes the steepest direction with a fixed step length. How large may that step be? It depends on curvature. The standard assumption is that the gradient is Lipschitz with constant L: curvature never exceeds L. For a quadratic, L is the largest eigenvalue of the Hessian; for the bowl, it is ten, the curvature across the narrow direction. On the bowl, each step multiplies the x error by one minus alpha, and the y error by one minus ten alpha. For the method to converge, both factors must be less than one in size, which requires alpha below two over L, zero point two. On the left, three runs from the same start. With alpha zero point zero five, the path is smooth but slow: two hundred and ninety one iterations. With zero point one eight it zigzags across the valley, because the y factor is minus zero point eight, but converges in seventy seven. With zero point two one, the y factor is minus one point one, and each zigzag is wider than the last: divergence. The deeper problem is the gap between curvatures. Any step safe in the steep direction crawls in the flat one. Next, choosing the step automatically."
+    },
+    {
+      "course": "numerical-optimisation",
+      "section": "backtracking",
+      "file": "numerical-optimisation/backtracking.wav",
+      "narration": "If the right step depends on a curvature constant you may not know, can the method find a safe step itself? Yes, by backtracking. Try a step, and if it does not reduce f enough, halve it and try again. The phrase that matters is reduce enough. The Armijo condition asks that the new value lie below a line that starts at the current value and falls with a small fraction, typically ten to the minus four, of the predicted slope. On the left, the blue curve is f along the steepest descent line from three, one and a half, and the orange line is the Armijo bound. A full step of one would give nine hundred and eleven, far uphill. Half a step gives a hundred and eighty one, a quarter gives twenty eight: both rejected. One eighth gives four point one five, below the bound, and is accepted. Repeating this at every iteration reaches a gradient below ten to the minus six in sixty one iterations, with no Lipschitz constant supplied. Why demand sufficient decrease rather than any decrease? Because a sequence of ever tinier improvements can stall short of the minimum. Next, Newton's method."
+    },
+    {
+      "course": "numerical-optimisation",
+      "section": "newton",
+      "file": "numerical-optimisation/newton.wav",
+      "narration": "Can a method use curvature to take better steps? Newton's method does. At each point it builds the second order Taylor model and jumps to that model's minimum, which means solving a linear system: the Hessian times the step equals minus the gradient. On a quadratic the model is exact, so one step finishes the job, and near a well behaved minimum the number of correct digits roughly doubles each step. But the model is only local. Take the square root of one plus x squared, a smooth bowl with its minimum at zero. Its Newton step sends x to minus x cubed. From one and a half, the full step lands at minus three point three seven five, the pink jump on the left, then thirty eight, then minus fifty six thousand: divergence. Far from zero, the curvature is tiny, so the model is nearly flat and its minimum is far away. Damping fixes it. Backtracking halves the first step, to minus zero point nine four, and from then on full steps are accepted, reaching three times ten to the minus eight in six iterations. Away from a minimum, also check the Newton step is a descent direction. Next, why curvature matters."
+    },
+    {
+      "course": "numerical-optimisation",
+      "section": "conditioning",
+      "file": "numerical-optimisation/conditioning.wav",
+      "narration": "Why did gradient descent struggle on the bowl? Because its level sets are elongated, and the condition number measures by how much: the largest curvature divided by the smallest. On the left, as the condition number grows from one to ten thousand, gradient descent with its best fixed step needs about that many times more iterations, from one to over a hundred thousand. Newton's method needs one step on any quadratic, because it uses the curvature directly. There are three standard remedies. Scaling changes units so the curvatures match: stretch y by root ten and the bowl becomes round. Quasi Newton methods such as BFGS build an approximate Hessian from the gradients they have already seen, without computing second derivatives; here they need two or three iterations at every condition number. Trust region methods take a different safeguard from line searches: they trust the quadratic model only within a radius, and grow or shrink that radius depending on how well the model predicted the actual decrease. A warning: units alone can change the condition number. Hours against seconds changes a curvature by a factor of thirteen million. Next, floating point limits."
+    },
+    {
+      "course": "numerical-optimisation",
+      "section": "floating",
+      "file": "numerical-optimisation/floating.wav",
+      "narration": "How precisely can a computer find a minimum? Less precisely than you might think, if it looks only at function values. Double precision numbers carry a relative error of about two times ten to the minus sixteen. Near a minimum the function is flat: one plus x minus one squared rises by only delta squared a distance delta from the minimiser. On the left, the computed rise, the orange points, follows the exact delta squared down to delta of ten to the minus seven. At ten to the minus eight, delta squared is ten to the minus sixteen, smaller than the spacing between floating point numbers near one, and the computed rise is exactly zero. So comparing function values cannot pin the minimiser down better than about the square root of epsilon, ten to the minus eight. The derivative does better: it is two delta, which is still clearly nonzero at that distance. That is one reason serious stopping tests use the gradient, not changes in f. And it is a reason to verify a coded gradient against central differences before trusting a solver. A wrong gradient leads to a confident stop at a point that is not stationary. Next, what stopping really proves."
+    },
+    {
+      "course": "numerical-optimisation",
+      "section": "stagnation",
+      "file": "numerical-optimisation/stagnation.wav",
+      "narration": "When a solver says it converged, what has it actually shown? There are three ways a run can end. The optimality residual, here the gradient's size, can fall below a tolerance. Progress can stagnate: steps or changes in f become tiny. Or an iteration limit is reached. Only the first is evidence of a solution. On the left, gradient descent runs on the bowl with a step of one thousandth, far too small. Every step is short, so a rule that stops when the step falls below ten to the minus three stops at iteration eleven hundred. But look at the pink curve: the gradient's size is still about one, and the point is still about one unit from the minimiser. The steps are small because the step size is small, not because the solution is close. The green curve, with a sensible step, drives the gradient down to ten to the minus six in seventy seven iterations. So record which test ended the run, and check the residual yourself. A converged label after an iteration limit or a step test, with the gradient never checked, is a claim without evidence. Next, putting the diagnostics together."
+    },
+    {
+      "course": "numerical-optimisation",
+      "section": "trace",
+      "file": "numerical-optimisation/trace.wav",
+      "narration": "What does a trustworthy answer look like? It comes with a trace, and with a check on the model itself. Here is damped Newton on the workshop's cost per chair, with forty pounds of overhead, starting at three chairs an hour, and a new machine's capacity of twelve. The code prints, for each iteration, the rate, the cost, the size of the derivative, the step length used, and whether the point is feasible. Every step is a full step, every point is within capacity, and the derivative falls from three hundredths to one thousandth to three millionths to ten to the minus eleven: the doubling of digits that marks Newton's quadratic convergence. That is mathematical and numerical evidence. Now the modelling evidence. The overhead is an estimate. Move it ten percent either way, the grey curves, and the best rate shifts to eight point five or nine point four. But the cost curve is flat near its minimum: running at eight point nine four when the overhead is really forty four pounds costs about one penny more per chair. The decision is robust; the third digit of q is not. That completes the chapter. Next, constraints change both valid directions and what counts as a certificate."
+    },
+    {
+      "course": "constrained",
+      "section": "active",
+      "file": "constrained/active.wav",
+      "narration": "This chapter is about optima that sit on a boundary: how to recognise them, how to certify them, and how algorithms keep to the rules. Write every constraint in one form: some function g is less than or equal to zero. At a given point, a constraint is active if it holds with equality, inactive if it has slack, and violated if it fails. Return to the cheapest way to make twenty four chairs, and add a real limit: only eight machine hours are available. The old optimum used nine point eight machine hours, so it is now infeasible. The new optimum, on the left, is the corner at eighteen labour hours and eight machine hours, costing six hundred pounds, where both constraints are active. Why is the gradient not zero there? Because from a boundary point not every direction is allowed. At the corner, a move must stay on or below the machine line and on or above the output curve. Every allowed direction raises the cost, even though some forbidden directions would lower it. Inactive constraints, by contrast, can be ignored locally. Next, the simplest case: equality constraints."
+    },
+    {
+      "course": "constrained",
+      "section": "lagrange",
+      "file": "constrained/lagrange.wav",
+      "narration": "How do you minimise a function along a curve? At the best point, moving a little along the curve should not change the objective to first order. Moving along the curve means moving perpendicular to the constraint's gradient. So the objective's gradient can have no component along the curve: it must be parallel to the constraint's gradient. That is the Lagrange condition: the gradient of f equals lambda times the gradient of h. Take the chapter nine problem exactly: make precisely twenty four chairs. The constraint's gradient is root M over L, root L over M. Setting twenty equal to lambda times the first and thirty equal to lambda times the second, the ratio gives M over L equals two thirds. With L times M equal to a hundred and forty four, that is fourteen point seven labour hours and nine point eight machine hours, costing five hundred and eighty eight pounds. On the left, the cost line touches the output curve there, and the two gradients point the same way. Both equations give lambda equal to twenty four point four nine. It means something: one more chair would raise the minimum cost by about that many pounds. Next, inequalities and their sign rules."
+    },
+    {
+      "course": "constrained",
+      "section": "lagrangian",
+      "file": "constrained/lagrangian.wav",
+      "narration": "How do inequalities enter the picture? Through the Lagrangian, with a careful sign convention. Write every constraint as g of x less than or equal to zero, and add each one to the objective multiplied by a non negative number lambda. Take the simplest case: minimise x minus three squared, but x may be at most two. The constraint is x minus two less than or equal to zero. The unconstrained minimum, three, is not allowed, so the answer is the boundary point two. At x equal to two, the derivative of the Lagrangian is two times x minus three plus lambda, which vanishes when lambda is two. That is positive, as it must be. On the left, the pink curve is the Lagrangian with lambda equal to two: the objective tilted by the multiplier, and its minimum has moved exactly to the boundary. Why must lambda be non negative? The term lambda times g charges for pressing against the constraint. A negative lambda would reward violating it. So in practice, a negative multiplier means the constraint is not really binding, or it was written with the wrong sign. Next, the full set of conditions."
+    },
+    {
+      "course": "constrained",
+      "section": "kkt",
+      "file": "constrained/kkt.wav",
+      "narration": "What exactly must hold at a constrained optimum? The Karush Kuhn Tucker conditions, four checks together. Primal feasibility: every constraint is satisfied. Dual feasibility: every multiplier is non negative. Stationarity: the gradient of the objective plus the multipliers times the constraint gradients sums to zero. And complementary slackness: each multiplier times its constraint value is zero, so a constraint with slack carries no multiplier. Check them for the allocation problem at eighteen, eight. The cost gradient is twenty, thirty. The output constraint's gradient there is minus two thirds, minus three halves, and the machine constraint's gradient is zero, one. The first component of stationarity gives twenty minus two thirds lambda one equals zero, so lambda one is thirty. The second gives thirty minus forty five plus lambda two equals zero, so lambda two is fifteen. Both constraints are active, both multipliers are positive, and every condition holds. On the left, the cost gradient, in pink, is exactly balanced by the two constraint forces, scaled by their multipliers. That is a certificate, under conditions the next section makes precise."
+    },
+    {
+      "course": "constrained",
+      "section": "qualifications",
+      "file": "constrained/qualifications.wav",
+      "narration": "Is every minimiser a KKT point, and is every KKT point a minimiser? Neither, without conditions. Here is a minimiser with no multipliers. Minimise x over the region where y is between zero and x cubed. The region, on the left, comes to a sharp cusp at the origin, and the origin is the minimiser. But the two active constraint gradients there point straight up and straight down, parallel to each other, and no combination of them can cancel the objective's gradient, which points sideways. Stationarity has no solution. The geometry is too degenerate for the gradients to describe it. A constraint qualification rules this out. The linear independence qualification asks that active constraint gradients be independent. Slater's condition, for convex problems, asks for one point that satisfies every inequality strictly. The allocation problem satisfies both: thirty labour hours and six machine hours is strictly feasible. Under a qualification, KKT is necessary. For sufficiency, convexity is the standard tool: if the objective and constraints are convex, any KKT point is a global minimiser. The allocation is convex, so eighteen, eight is certified. Next, bounds from the other side."
+    },
+    {
+      "course": "constrained",
+      "section": "duality",
+      "file": "constrained/duality.wav",
+      "narration": "Can you prove that no cheaper plan exists, without searching all of them? Duality gives a way. For any non negative multipliers, minimise the Lagrangian over all x, including infeasible ones. That number is the dual function, and it is always a lower bound on the true optimum. The reason is short: at any feasible point, each constraint is non positive, so adding non negative multiples of them can only lower the objective. That is weak duality, and it needs no convexity. For the allocation problem the dual function has a closed form: twenty four lambda one minus eight lambda two, as long as lambda one squared is at most twenty times thirty plus lambda two. Any such pair gives a guarantee. Multipliers twenty four point five and zero prove that no plan costs less than five hundred and eighty eight pounds. Multipliers thirty and fifteen prove no plan costs less than six hundred, and since a six hundred pound plan exists, the gap is zero. On the left, the best bound rises to meet the optimum at lambda two equal to fifteen. For convex problems satisfying Slater's condition, the gap always closes. Next, how algorithms handle constraints."
+    },
+    {
+      "course": "constrained",
+      "section": "methods",
+      "file": "constrained/methods.wav",
+      "narration": "How does an algorithm respect a constraint? Three families answer differently, and the clearest way to see it is where their iterates end up. Take the one dimensional problem: minimise x minus three squared with x at most two. A penalty method adds a cost for violation, mu over two times the violation squared, and minimises freely. On the left, with mu equal to ten, the pink curve's minimum is at two point one six seven: past the boundary. Raising mu to a thousand brings it to two point zero zero two, but always from the infeasible side. A barrier method adds minus t times the log of the slack, which blows up at the boundary, so its minimiser is always strictly feasible: one point six three four with t equal to one, one point nine nine five with t equal to one hundredth. Projection takes a gradient step and then moves to the nearest feasible point; here it reaches exactly two in two steps. Each family has its cost. Penalties and barriers are exact only in a limit, and pushing mu up or t down makes the subproblems badly conditioned. Projection is only cheap when the feasible set is simple. Next, what multipliers tell you after solving."
+    },
+    {
+      "course": "constrained",
+      "section": "sensitivity",
+      "file": "constrained/sensitivity.wav",
+      "narration": "Once a constrained problem is solved, what else do the multipliers tell you? They are sensitivities. Each multiplier is the rate at which the optimal value changes as its constraint is relaxed: a shadow price. At eighteen, eight, the machine multiplier is fifteen, so one more machine hour should save about fifteen pounds. The output multiplier is thirty, so one more chair should cost about thirty pounds. The table checks these. Relax the machine cap by a tenth of an hour and the cost falls by one pound forty four, close to the predicted one fifty. Require twenty five chairs and the cost rises by thirty pounds sixty three, close to thirty. But these are first order predictions. On the left, the optimal cost curves as the cap grows. A whole extra hour saves ten pounds, not fifteen. And beyond nine point eight hours the cap stops binding at all: the multiplier drops to zero and extra machine time is worth nothing. Large changes need the problem solved again. That completes the chapter. Next, nonsmooth or sampled objectives need further adaptations of the update reasoning."
+    },
+    {
+      "course": "nonsmooth-sampled",
+      "section": "subgradients",
+      "file": "nonsmooth-sampled/subgradients.wav",
+      "narration": "This chapter extends the toolkit to objectives with corners and objectives known only through samples, and separates what is guaranteed from what is merely practical. Start with corners. A convex function with a kink has no derivative there, but it still has supporting lines: lines that touch the graph at the point and never rise above it. The slope of any such line is a subgradient. Take the maximum of minus two x and x. At zero the two pieces meet with slopes minus two and one. On the left, lines through the origin with slope minus a half, zero, or a half all stay below the graph, and so does every slope in between. The set of all subgradients, the subdifferential, is the interval from minus two to one. Where the function is smooth, the subdifferential is just the gradient. The optimality condition generalises neatly: a point minimises a convex function exactly when zero is one of its subgradients. Here zero is in the interval, so the origin is the minimiser. Kinks are common in practice, from absolute values and maxima, and they often sit exactly at the answer. Next, stepping with subgradients."
+    },
+    {
+      "course": "nonsmooth-sampled",
+      "section": "subgradient-steps",
+      "file": "nonsmooth-sampled/subgradient-steps.wav",
+      "narration": "Can you simply replace the gradient with a subgradient and run gradient descent? You can, but expect different behaviour. Minimise the absolute value of x, starting at one. Away from zero, the subgradient is the sign of x, so every step has length exactly alpha, however close you are. With a constant step of zero point three, the pink iterates go to zero point seven, zero point four, zero point one, then jump to minus zero point two and bounce between those two values forever. They can never land closer than the step allows. With a diminishing step, half over root k, the blue iterates close in on zero, but slowly, and not monotonically: sometimes the function goes up. Three habits from smooth optimisation break. The negative subgradient need not be a descent direction, so line searches can stall. The objective can rise, so you keep track of the best point seen. And the subgradient's size does not shrink near the minimiser, so it cannot serve as a stopping test. The guarantees need step sizes that shrink to zero but sum to infinity, and the rate is slow. Next, handling the kink exactly instead."
+    },
+    {
+      "course": "nonsmooth-sampled",
+      "section": "prox",
+      "file": "nonsmooth-sampled/prox.wav",
+      "narration": "Is there a way to handle a kink exactly rather than bouncing around it? The proximal map does. It asks for the point closest to v that also keeps a nonsmooth term small: minimise one half x minus v squared plus lambda times g of x. For the absolute value, derive it by cases using the subgradient condition. If the answer is positive, the condition gives x equals v minus lambda, which is only consistent when v is bigger than lambda. If it is negative, x equals v plus lambda, consistent when v is less than minus lambda. Otherwise, the answer is zero, and that happens whenever v lies within lambda of zero. Put together: shrink v towards zero by lambda, and set it to exactly zero if it would cross. That is soft thresholding, the curves on the left. With lambda equal to one, one and a half becomes a half, zero point seven becomes zero, and minus two and a half becomes minus one and a half. For an objective that is smooth plus an absolute value, the proximal gradient method takes a gradient step on the smooth part and then applies this map. Next, objectives that are sums of many terms."
+    },
+    {
+      "course": "nonsmooth-sampled",
+      "section": "sampled",
+      "file": "nonsmooth-sampled/sampled.wav",
+      "narration": "What if the objective is an average over thousands or millions of observations? Computing its gradient means touching every one of them. Sampled gradients touch one. Take a small version from the workshop: the chairs made in each hour of a shift, two, two, three, three, three, three, four, four. To fit a single hourly rate, minimise the average squared difference, whose minimiser is the mean, three. On the left, the blue curve is that average, and the grey curves are single terms: each one has its minimum at its own hour's count, not at three. One hour's gradient is just two times w minus that hour's count. The code traces two sampled updates from five with a step of a tenth. Sampling hour one, whose count is two, gives a gradient of six and moves w to four point four. Sampling hour seven, with count four, gives a gradient of zero point eight and moves it to four point three two. A full gradient step would have gone to four point six. Each sampled step costs one term instead of eight, or one instead of millions. The price is noise. Next, when that noise is harmless."
+    },
+    {
+      "course": "nonsmooth-sampled",
+      "section": "variance",
+      "file": "nonsmooth-sampled/variance.wav",
+      "narration": "When is a noisy gradient good enough? The key property is unbiasedness: averaged over the random choice of sample, the sampled gradient equals the true one. At w equal to five, the eight hourly gradients are six, six, four, four, four, four, two, two. Pick an hour uniformly at random and the average is four, exactly the full gradient. But any single draw can be off: the variance is two, so a typical draw misses by about one point four. Averaging a batch of b hours divides the variance by b, so the typical error falls like one over root b. On the left, the curve is that formula, and the orange points come from ten thousand simulated batches at each size: four hours gives an error of about zero point seven, thirty two hours about zero point two five. Now the caution in the last row of the table. Suppose you sample only morning hours, when the machine is still warming up and output is lower. The average gradient becomes five, not four. That is bias, and unlike variance, no batch size removes it. Unbiasedness is a property of the sampler, not of the formula. Next, step sizes when gradients are noisy."
+    },
+    {
+      "course": "nonsmooth-sampled",
+      "section": "schedules",
+      "file": "nonsmooth-sampled/schedules.wav",
+      "narration": "If every gradient is noisy, can the iterates ever settle? Only if the step size shrinks. On the left, two runs from five, each using one randomly chosen hour per step. With a constant step of a tenth, the pink path reaches the neighbourhood of three quickly, and then keeps wandering, between about two point six and three point seven, because each step still jumps towards whichever hour was drawn. With a step of one over two times k plus one, each update makes w the running average of all the hours sampled so far, and the blue path settles. After two hundred steps it is at three point one, about two standard errors from the minimiser, which is what averaging two hundred noisy samples can deliver. Noise also changes what stopping evidence means. Near the end of the constant step run, the loss on a single sampled hour ranged from zero to two point eight. Even exactly at the minimiser, a sampled gradient is minus two, zero or two. So stop using a full or large batch check, or a fixed budget, and report which. Momentum and adaptive methods change the details; deep learning courses cover them. Next, choosing among all these tools."
+    },
+    {
+      "course": "nonsmooth-sampled",
+      "section": "selection",
+      "file": "nonsmooth-sampled/selection.wav",
+      "narration": "Faced with a new optimisation problem, where do you start? Not with an algorithm, but with its structure. Is the objective differentiable, or does it have kinks? Are there constraints, and which are likely to be active? Is the problem convex, so that a local answer is global? Is the objective an average over many data points? The answers choose the reasoning. Smooth, small problems suit Newton or quasi Newton methods, with a gradient check first. Constraints call for the KKT conditions, with multipliers read as prices. Kinks call for subgradients, proximal steps, or an epigraph reformulation that removes them. Large sums call for sampled gradients with a decaying step. The table collects the workshop problems from this course, and the structure decided the method every time: Newton for the best rate, a KKT certificate for the machine limit, the normal equations and a linear program for the two fits, and stochastic steps for the hourly rate. That completes the chapter and the course. Continue with unfamiliar examples and reasoned implementation practice, and use the companion courses for specialist and operational depth."
+    }
+  ]
+}
