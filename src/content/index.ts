@@ -5,6 +5,7 @@ import { integration } from './integration'
 import { integrationMethods } from './integration-methods'
 import { series } from './series'
 import { multivariable } from './multivariable'
+import { multipleIntegrals } from './multiple-integrals'
 import type { Course, Section } from './types'
 
 // Course registry, in syllabus order. Courses are added here as each is authored.
@@ -16,6 +17,7 @@ export const COURSES: Record<string, Course> = {
   [integrationMethods.id]: integrationMethods,
   [series.id]: series,
   [multivariable.id]: multivariable,
+  [multipleIntegrals.id]: multipleIntegrals,
 }
 
 export type { Course, Section }

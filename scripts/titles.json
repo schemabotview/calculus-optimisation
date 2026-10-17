@@ -6,5 +6,6 @@
   "integration": "Calculus: Integration, Riemann Sums and the Fundamental Theorem",
   "integration-methods": "Calculus: Integration Techniques, Improper Integrals and Numerical Quadrature",
   "series": "Calculus: Sequences, Series, Convergence Tests and Taylor Approximation",
-  "multivariable": "Calculus: Partial Derivatives, Gradients, Jacobians and the Multivariable Chain Rule"
+  "multivariable": "Calculus: Partial Derivatives, Gradients, Jacobians and the Multivariable Chain Rule",
+  "multiple-integrals": "Calculus: Double and Triple Integrals, Fubini and Polar Coordinates"
 }
