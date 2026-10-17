@@ -33,3 +33,17 @@ export const power = (t: number) => 3 + 2 * Math.sin((Math.PI * t) / 8)
 
 /** Energy used by time t, kWh: E(t) = ∫₀ᵗ P = 3t + (16/π)(1 − cos(πt/8)). E(8) = 24 + 32/π ≈ 34.19. */
 export const energy = (t: number) => 3 * t + (16 / Math.PI) * (1 - Math.cos((Math.PI * t) / 8))
+
+/**
+ * Chairs per shift from L labour hours and M machine hours: Q(L, M) = 2√(LM). The standard shift is
+ * (16, 9), giving 24 chairs: the 3 per hour of chapter 1. ∇Q = (√(M/L), √(L/M)) = (0.75, 4/3) there.
+ */
+export const output = (L: number, M: number) => 2 * Math.sqrt(L * M)
+export const SHIFT_L = 16
+export const SHIFT_M = 9
+/** The level set Q = c, as M against L: M = c²/(4L). */
+export const outputLevel = (c: number, L0: number, L1: number, n = 80): [number, number][] =>
+  Array.from({ length: n + 1 }, (_, i) => {
+    const L = L0 + ((L1 - L0) * i) / n
+    return [L, (c * c) / (4 * L)]
+  })
