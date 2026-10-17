@@ -42,8 +42,26 @@ with a screenshot per route in `density/`. Targets, not thresholds; only eyebrow
 - energy as accumulated power (chapter 4), measured cost (chapters 3, 10), and
   material/capacity-limited allocation (chapters 9, 11)
 
+## Status
+
+All 12 chapters (88 sections) are authored and pass `build`, `tsc`, `check` and `density`. Every
+frame was inspected on its chapter's contact sheet at 1920 × 1080. No audio yet: it follows review, in
+one Colab pass per chapter.
+
+- **Density:** 85 of 88 meet every target. Three near-misses remain, all in the reviewed chapters 1
+  and 2: slides at 0.78–0.79 (`limits-limits`, `limits-epsilon-delta`, `derivatives-differentiability`),
+  held there by the 1000px model ceiling. No eyebrow overlaps.
+- **Ranges:** slides measure 0.78–0.89 of the pane; scene area 0.55–0.80; binding axis 0.89 throughout.
+- **Narration:** 166–208 words per section, 16,520 in total, about 110 minutes at 150 wpm. That is
+  longer than the 130–170 planned (and longer than linear-algebra); trim in review if the pacing drags.
+- **Workshop thread, as built:** `workshop.ts` gained `output(L, M) = 2√(LM)` (chapters 7, 9, 11) and
+  the allocation prices (labour £20/h, machine £30/h, M ≤ 8). Chapter 10 uses a shared test bowl,
+  `src/scenes/numerical-optimisation/bowl.ts`; chapter 11 a shared feasible region, `region.ts`.
+- **Code cards:** chapters 7 (`gradcheck.py`), 10 (`trace.py`) and 12 (`sampled.py`), each printing
+  output copied from a real run.
+
 ## Open decisions
 
 - **Brand**: `--brand #7c3aed` (violet), `--accent-2 #fbbf24` (amber); linear-algebra uses blue.
-- **Code cards**: the plan allows illustrative code with output. Planned for chapters 7 (finite-
-  difference gradient check), 10 (optimiser trace) and 12 (sampled gradients); tables elsewhere.
+- **Code cards**: used in chapters 7, 10 and 12 as planned (see Status); tables elsewhere. Add more
+  if you want code on screen earlier.

@@ -103,6 +103,9 @@ breaks only on screen. Its comments carry the measured constants; the short vers
   `check` fails over 1000 modelled design px; the band below gives the floor too. Bullets cost far
   more than prose of the same length.
 - **A `focus:` that names no node in its scene is a silent no-op** — nothing lights up.
+- **Scene ids are global, not per course.** A second `chain-rule` scene in chapter 7 replaced
+  chapter 2's, which `check` caught only because chapter 2's `focus` stopped resolving. Prefix
+  generic names (`jacobian-chain`, `convex-existence`, `improper-2d`).
 - **`icon:` names are NOT guarded.** The engine's lucide registry is `Record<string, LucideIcon>`
   and does not enumerate its keys, so a wrong name type-checks, passes `check`, builds, and renders
   a card with no glyph. There are ~75 valid keys; copy one off an existing scene rather than
