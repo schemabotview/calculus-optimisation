@@ -27,3 +27,9 @@ export const warmUpRate = (t: number) => 30 * Math.exp(-t / 2)
 export const costPerChair = (q: number) => 40 / q + 0.5 * q + 2
 export const costSlope = (q: number) => -40 / (q * q) + 0.5
 export const CAPACITY = 8
+
+/** Machine power draw over the shift, kW: P(t) = 3 + 2 sin(πt/8), peaking mid-shift at 5 kW. */
+export const power = (t: number) => 3 + 2 * Math.sin((Math.PI * t) / 8)
+
+/** Energy used by time t, kWh: E(t) = ∫₀ᵗ P = 3t + (16/π)(1 − cos(πt/8)). E(8) = 24 + 32/π ≈ 34.19. */
+export const energy = (t: number) => 3 * t + (16 / Math.PI) * (1 - Math.cos((Math.PI * t) / 8))
