@@ -2,6 +2,7 @@ import { limits } from './limits'
 import { derivatives } from './derivatives'
 import { analysis } from './analysis'
 import { integration } from './integration'
+import { integrationMethods } from './integration-methods'
 import type { Course, Section } from './types'
 
 // Course registry, in syllabus order. Courses are added here as each is authored.
@@ -10,6 +11,7 @@ export const COURSES: Record<string, Course> = {
   [derivatives.id]: derivatives,
   [analysis.id]: analysis,
   [integration.id]: integration,
+  [integrationMethods.id]: integrationMethods,
 }
 
 export type { Course, Section }
