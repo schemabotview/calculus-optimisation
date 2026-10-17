@@ -4,5 +4,6 @@
   "derivatives": "Calculus: Derivatives, the Chain Rule and Linear Approximation",
   "analysis": "Calculus: Optimisation with Derivatives, Extrema and Newton's Method",
   "integration": "Calculus: Integration, Riemann Sums and the Fundamental Theorem",
-  "integration-methods": "Calculus: Integration Techniques, Improper Integrals and Numerical Quadrature"
+  "integration-methods": "Calculus: Integration Techniques, Improper Integrals and Numerical Quadrature",
+  "series": "Calculus: Sequences, Series, Convergence Tests and Taylor Approximation"
 }
