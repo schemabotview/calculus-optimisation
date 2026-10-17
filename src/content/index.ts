@@ -9,6 +9,7 @@ import { multipleIntegrals } from './multiple-integrals'
 import { optimality } from './optimality'
 import { numericalOptimisation } from './numerical-optimisation'
 import { constrained } from './constrained'
+import { nonsmoothSampled } from './nonsmooth-sampled'
 import type { Course, Section } from './types'
 
 // Course registry, in syllabus order. Courses are added here as each is authored.
@@ -24,6 +25,7 @@ export const COURSES: Record<string, Course> = {
   [optimality.id]: optimality,
   [numericalOptimisation.id]: numericalOptimisation,
   [constrained.id]: constrained,
+  [nonsmoothSampled.id]: nonsmoothSampled,
 }
 
 export type { Course, Section }
