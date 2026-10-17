@@ -143,6 +143,8 @@ CHROME_PATH=/opt/pw-browsers/chromium npm run density   # report + density/<slug
 **The slide band is narrow.** `check`'s model over-reserves bullets, so a slide must model ≤ 1000
 while rendering ≥ 0.80 of the pane. Author to a model of about 930–995. To gain rendered height
 cheaply, lengthen an existing paragraph by a line; to lose model height, turn bullets into prose.
+**Bullets of about 52–62 characters are the trap**: they render on one line but the model counts two.
+Keep bullets under ~50 characters, or let them genuinely run to two lines.
 
 `npm run density` (`scripts/density.mjs`) measures the floor that `check` does not: slide fill,
 scene fill and eyebrow overlap, on the rendered route. It judges slide fill on the rendered height,

@@ -19,3 +19,11 @@ export const warmUp = (t: number) => 20 + 60 * (1 - Math.exp(-t / 2))
 
 /** Its rate of change, °C per hour: T′(t) = 30 e^(−t/2) (chain rule, chapter 2). */
 export const warmUpRate = (t: number) => 30 * Math.exp(-t / 2)
+
+/**
+ * Cost per chair, £, at production rate q chairs/hour: overhead 40/q spread over the chairs, machine
+ * wear 0.5q that rises with speed, and £2 of material. Unconstrained minimum at q = √80 ≈ 8.94.
+ */
+export const costPerChair = (q: number) => 40 / q + 0.5 * q + 2
+export const costSlope = (q: number) => -40 / (q * q) + 0.5
+export const CAPACITY = 8

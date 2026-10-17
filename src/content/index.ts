@@ -1,11 +1,13 @@
 import { limits } from './limits'
 import { derivatives } from './derivatives'
+import { analysis } from './analysis'
 import type { Course, Section } from './types'
 
 // Course registry, in syllabus order. Courses are added here as each is authored.
 export const COURSES: Record<string, Course> = {
   [limits.id]: limits,
   [derivatives.id]: derivatives,
+  [analysis.id]: analysis,
 }
 
 export type { Course, Section }
