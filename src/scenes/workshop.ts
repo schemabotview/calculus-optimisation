@@ -16,3 +16,6 @@ export const chairsModel = (t: number) => RATE * t
 
 /** Machine temperature during warm-up, °C: T(t) = 20 + 60 (1 − e^(−t/2)). */
 export const warmUp = (t: number) => 20 + 60 * (1 - Math.exp(-t / 2))
+
+/** Its rate of change, °C per hour: T′(t) = 30 e^(−t/2) (chain rule, chapter 2). */
+export const warmUpRate = (t: number) => 30 * Math.exp(-t / 2)
