@@ -9,5 +9,6 @@
   "multivariable": "Calculus: Partial Derivatives, Gradients, Jacobians and the Multivariable Chain Rule",
   "multiple-integrals": "Calculus: Double and Triple Integrals, Fubini and Polar Coordinates",
   "optimality": "Calculus: Hessians, Critical Points, Convexity and Optimality Conditions",
-  "numerical-optimisation": "Calculus: Gradient Descent, Newton's Method, Line Search and Conditioning"
+  "numerical-optimisation": "Calculus: Gradient Descent, Newton's Method, Line Search and Conditioning",
+  "constrained": "Optimisation: Lagrange Multipliers, KKT Conditions, Duality and Constrained Methods"
 }

@@ -47,3 +47,12 @@ export const outputLevel = (c: number, L0: number, L1: number, n = 80): [number,
     const L = L0 + ((L1 - L0) * i) / n
     return [L, (c * c) / (4 * L)]
   })
+
+/**
+ * The allocation problem of chapters 9 and 11: labour at £20/h, machine time at £30/h, at least 24 chairs.
+ * Chapter 11 adds machine availability M ≤ 8, which moves the optimum from (14.70, 9.80), £587.88, to
+ * (18, 8), £600, with multipliers λ = (30, 15).
+ */
+export const PRICE_L = 20
+export const PRICE_M = 30
+export const MACHINE_CAP = 8
