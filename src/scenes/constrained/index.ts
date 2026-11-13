@@ -1,4 +1,4 @@
-import type { Scene } from '@graphlearning/flow'
+import type { BoardScene } from '../frame'
 import { active } from './active'
 import { lagrange } from './lagrange'
 import { lagrangian } from './lagrangian'
@@ -9,4 +9,4 @@ import { methods } from './methods'
 import { sensitivity } from './sensitivity'
 
 // Chapter 11 — one scene per section. region.ts is the shared feasible set, not a scene.
-export const constrainedScenes: Scene[] = [active, lagrange, lagrangian, kkt, qualifications, duality, methods, sensitivity]
+export const constrainedScenes: BoardScene[] = [active, lagrange, lagrangian, kkt, qualifications, duality, methods, sensitivity]

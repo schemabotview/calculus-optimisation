@@ -1,4 +1,4 @@
-import type { Scene } from '@graphlearning/flow'
+import type { BoardScene } from '../frame'
 import { surfaces } from './surfaces'
 import { paths } from './paths'
 import { mixed } from './mixed'
@@ -9,4 +9,4 @@ import { leastSquares } from './least-squares'
 import { checking } from './checking'
 
 // Chapter 7 — one scene per section.
-export const multivariableScenes: Scene[] = [surfaces, paths, mixed, tangentPlane, gradient, chainRule, leastSquares, checking]
+export const multivariableScenes: BoardScene[] = [surfaces, paths, mixed, tangentPlane, gradient, chainRule, leastSquares, checking]

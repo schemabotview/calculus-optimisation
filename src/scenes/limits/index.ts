@@ -1,4 +1,4 @@
-import type { Scene } from '@graphlearning/flow'
+import type { BoardScene } from '../frame'
 import { functionsUnits } from './functions-units'
 import { elementary } from './elementary'
 import { limitsLaws } from './limits-laws'
@@ -8,4 +8,4 @@ import { existence } from './existence'
 import { epsilonDelta } from './epsilon-delta'
 
 // Chapter 1 — one scene per section.
-export const limitsScenes: Scene[] = [functionsUnits, elementary, limitsLaws, limitsInfinity, continuity, existence, epsilonDelta]
+export const limitsScenes: BoardScene[] = [functionsUnits, elementary, limitsLaws, limitsInfinity, continuity, existence, epsilonDelta]

@@ -1,43 +1,66 @@
-import type { Scene } from '@graphlearning/flow'
+import { board, caution, fact, facts } from '../frame'
 
 // §2.2 — |x| is continuous at 0 but has a corner: its one-sided difference quotients are −1 and +1
 // (computed), so there is no single tangent. x² has slope 0 there from both sides.
-export const differentiability: Scene = {
+export const differentiability = board({
   id: 'differentiability',
-  title: 'A corner: continuous but not differentiable',
-  flow: 'TB',
-  nodes: [
+  figure: 'A corner: continuous but not differentiable',
+  diagram: [
     {
+      type: 'plot',
+      compact: true,
       id: 'corner',
-      kind: 'plot',
-      label: '|x| has a corner at 0; x² has a tangent there',
-      sub: 'both are continuous at 0; only x² is differentiable',
-      plot: {
-        equal: true,
-        x: { min: -2, max: 2, step: 0.5 },
-        y: { min: -0.5, max: 2, step: 0.5 },
-        series: [
-          { kind: 'line', points: [[-2, 2], [0, 0], [2, 2]], label: '|x|', labelAt: [-1.95, 1.65], color: '#f472b6' },
-          { kind: 'line', points: Array.from({ length: 41 }, (_, i): [number, number] => { const x = -1.4 + (2.8 * i) / 40; return [x, x * x] }), label: 'x²', labelAt: [1.15, 1.5], color: '#60a5fa' },
-          { kind: 'line', points: [[-1, 0], [1, 0]], label: 'tangent to x²: y = 0', labelAt: [0.25, -0.3], color: '#34d399' },
-          { kind: 'marker', at: [0, 0], color: '#f59e0b' },
-        ],
-      },
+      title: '|x| has a corner at 0; x² has a tangent there',
+      equal: true,
+      x: { min: -2, max: 2, step: 0.5 },
+      y: { min: -0.5, max: 2, step: 0.5 },
+      series: [
+        {
+          kind: 'line',
+          points: [[-2, 2], [0, 0], [2, 2]],
+          label: '|x|',
+          labelAt: [-1.95, 1.65],
+          tone: 'serve'
+        },
+        {
+          kind: 'line',
+          points: Array.from({ length: 41 }, (_, i): [
+            number,
+            number
+          ] => { const x = -1.4 + (2.8 * i) / 40; return [x, x * x]; }),
+          label: 'x²',
+          labelAt: [1.15, 1.5],
+          tone: 'ingest'
+        },
+        {
+          kind: 'line',
+          points: [[-1, 0], [1, 0]],
+          label: 'tangent to x²: y = 0',
+          labelAt: [0.25, -0.3],
+          tone: 'store'
+        },
+        { kind: 'scatter', points: [[0, 0]], tone: 'infra' },
+      ]
     },
     {
+      type: 'table',
       id: 'one-sided',
-      kind: 'table',
-      label: 'One-sided difference quotients at 0',
-      sub: 'differentiable needs the two sides to agree',
-      headers: ['h', '|x|: (|h| − 0)/h', 'x²: (h² − 0)/h'],
-      values: [
+      title: 'One-sided difference quotients at 0: differentiable needs the two sides to agree',
+      columns: ['h', '|x|: (|h| − 0)/h', 'x²: (h² − 0)/h'],
+      rows: [
         ['0.1', '1', '0.1'],
         ['0.01', '1', '0.01'],
         ['−0.01', '−1', '−0.01'],
         ['−0.1', '−1', '−0.1'],
         ['limit', 'right 1, left −1: none', '0 from both sides'],
-      ],
+      ]
     },
   ],
-  edges: [],
-}
+  idea: 'Differentiability, tangent lines and continuity',
+  board: [
+    fact('b-rule', 'Differentiable at a: f′(a) exists', 'tangent line y = f(a) + f′(a)(x − a)'),
+    facts('b-1', 'A corner', ['|x| at 0: +1 right, −1 left', 'no single slope: no f′(0)']),
+    facts('b-2', 'Continuity is weaker', ['differentiable ⇒ continuous', 'not conversely: |x| at 0', 'x² at 0: slope 0 both sides']),
+    caution('b-watch', 'Switches, caps and absolute values make corners. Chapter 12 replaces the single slope with a set of slopes.'),
+  ]
+})

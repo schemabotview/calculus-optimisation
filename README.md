@@ -1,17 +1,16 @@
 # calculus-optimisation
 
 The GraphL concept app for **Calculus and Optimisation — from change and accumulation to justified
-decisions**: 12 courses (one per chapter), 88 sections, each section one `(scene, slide, narration)`
-video segment.
+decisions**: 12 courses (one per chapter), 88 sections, each section one `(scene, narration)`
+chapter of a single film. Scenes render with `@graphlearning/graphl-flow`; the app shell is `@graphlearning/shell`.
 
 Scaffolded from [`content-repo-template`](https://github.com/schemabotview/content-repo-template),
-with the density tooling and plot builders developed on
+with the plot builders developed on
 [`linear-algebra`](https://github.com/schemabotview/linear-algebra).
 
 - `CALCULUS-AND-OPTIMISATION-COURSE-PLAN.md` — the syllabus.
-- `AUTHORING-PLAN.md` — how the syllabus becomes sections, in what order, and the density check.
-- `CLAUDE.md` — route contract, course ids, scene vocabulary, and the invariants inherited from the
-  template.
+- `AUTHORING-PLAN.md` — how the syllabus becomes sections, and in what order.
+- `CLAUDE.md` — route contract, course ids, the board frame, scene vocabulary and invariants.
 
 ## Running it
 
@@ -26,8 +25,14 @@ Routes are `#/<course>-<section>`, e.g. `#/limits-continuity`. `#/` is the catal
 
 ```sh
 npm run build && npx tsc --noEmit && npm run check
-CHROME_PATH=/opt/pw-browsers/chromium npm run density
 ```
 
-The first three are a floor; `density` reports how full each frame is and writes a screenshot per
-route to `density/`. The rendered route is the real bar.
+Then `npm run shots -- <course>` and look at `out/shots/`: the checks are a floor, the rendered
+frame is the real bar.
+
+## The film
+
+```sh
+npm run record:all   # every course → scripts/segments/
+npm run film         # one MP4 with chapters → scripts/out/
+```

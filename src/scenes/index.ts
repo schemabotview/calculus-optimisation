@@ -1,4 +1,5 @@
-import type { Scene } from '@graphlearning/flow'
+import type { SceneModel } from '@graphlearning/graphl-flow'
+import type { BoardScene } from './frame'
 import { limitsScenes } from './limits'
 import { derivativesScenes } from './derivatives'
 import { analysisScenes } from './analysis'
@@ -13,12 +14,18 @@ import { constrainedScenes } from './constrained'
 import { nonsmoothSampledScenes } from './nonsmooth-sampled'
 
 // Scene registry. Sections reference scenes by id; scenes are grouped by course (one folder each,
-// mirroring src/content). Ids are globally unique across courses, so the flat lookup below is
-// unambiguous. Courses are added here as each is authored.
-const ALL: Scene[] = [...limitsScenes, ...derivativesScenes, ...analysisScenes, ...integrationScenes, ...integrationMethodsScenes, ...seriesScenes, ...multivariableScenes, ...multipleIntegralsScenes, ...optimalityScenes, ...numericalOptimisationScenes, ...constrainedScenes, ...nonsmoothSampledScenes]
+// mirroring src/content). Ids are GLOBAL: merging two chapters that both define an id would let the
+// later one silently replace the earlier (calculus-optimisation lost a chain-rule scene that way), so
+// a duplicate throws.
+const CHAPTERS: BoardScene[][] = [limitsScenes, derivativesScenes, analysisScenes, integrationScenes, integrationMethodsScenes, seriesScenes, multivariableScenes, multipleIntegralsScenes, optimalityScenes, numericalOptimisationScenes, constrainedScenes, nonsmoothSampledScenes]
 
-export const SCENES: Record<string, Scene> = Object.fromEntries(ALL.map((s) => [s.id, s]))
+export const SCENES: Record<string, SceneModel> = {}
+for (const chapter of CHAPTERS)
+  for (const scene of chapter) {
+    if (SCENES[scene.id]) throw new Error(`scene id '${scene.id}' is defined twice`)
+    SCENES[scene.id] = scene
+  }
 
-export function getScene(id: string): Scene | undefined {
+export function getScene(id: string): SceneModel | undefined {
   return SCENES[id]
 }

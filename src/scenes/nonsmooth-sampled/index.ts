@@ -1,4 +1,4 @@
-import type { Scene } from '@graphlearning/flow'
+import type { BoardScene } from '../frame'
 import { subgradients } from './subgradients'
 import { subgradientSteps } from './subgradient-steps'
 import { prox } from './prox'
@@ -8,4 +8,4 @@ import { schedules } from './schedules'
 import { selection } from './selection'
 
 // Chapter 12 — one scene per section.
-export const nonsmoothSampledScenes: Scene[] = [subgradients, subgradientSteps, prox, sampled, variance, schedules, selection]
+export const nonsmoothSampledScenes: BoardScene[] = [subgradients, subgradientSteps, prox, sampled, variance, schedules, selection]

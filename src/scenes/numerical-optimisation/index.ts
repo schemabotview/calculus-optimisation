@@ -1,4 +1,4 @@
-import type { Scene } from '@graphlearning/flow'
+import type { BoardScene } from '../frame'
 import { descentScene } from './descent'
 import { stepSize } from './step-size'
 import { backtracking } from './backtracking'
@@ -9,4 +9,4 @@ import { stagnation } from './stagnation'
 import { trace } from './trace'
 
 // Chapter 10 — one scene per section. bowl.ts is the shared test problem, not a scene.
-export const numericalOptimisationScenes: Scene[] = [descentScene, stepSize, backtracking, newton, conditioning, floating, stagnation, trace]
+export const numericalOptimisationScenes: BoardScene[] = [descentScene, stepSize, backtracking, newton, conditioning, floating, stagnation, trace]
