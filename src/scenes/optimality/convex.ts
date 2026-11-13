@@ -22,21 +22,21 @@ export const convex = board({
           kind: 'line',
           points: sample(1.6, 16, 120, costPerChair),
           label: 'c(q)',
-          labelAt: [1.9, 25],
+          labelAt: [1.9, 24],
           tone: 'ingest'
         },
         {
           kind: 'line',
           points: sample(1.5, 8.5, 2, tangent(4, -2)),
           label: 'tangent at q = 4',
-          labelAt: [6.4, 7.6],
+          labelAt: [6.7236, 8.0286],
           tone: 'store'
         },
         {
           kind: 'line',
           points: sample(6, 16, 2, tangent(12, 2 / 9)),
           label: 'tangent at q = 12',
-          labelAt: [12.3, 10.2],
+          labelAt: [12.3, 9.7714],
           tone: 'store'
         },
         {

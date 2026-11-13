@@ -28,14 +28,14 @@ export const taylor = board({
           kind: 'line',
           points: sample(-3, 2.1, 100, Math.exp),
           label: 'eˣ',
-          labelAt: [1.55, 7.4],
+          labelAt: [1.55, 7.05],
           tone: 'ingest'
         },
         {
           kind: 'line',
           points: sample(-2.5, 2.1, 40, T(1)),
           label: 'T₁ = 1 + x',
-          labelAt: [1.25, 2.1],
+          labelAt: [1.25, 1.4893],
           tone: 'serve'
         },
         {
@@ -49,7 +49,7 @@ export const taylor = board({
           kind: 'line',
           points: sample(-3, 2.1, 80, T(3)),
           label: 'T₃',
-          labelAt: [-2.4, -1.2],
+          labelAt: [-2.4, -0.79286],
           tone: 'store'
         },
       ]

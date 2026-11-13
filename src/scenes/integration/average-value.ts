@@ -22,7 +22,7 @@ export const averageValue = board({
           points: [[0, 0], [0, avg], [8, avg], [8, 0]],
           dashed: true,
           label: 'average 4.27 kW',
-          labelAt: [0.2, 3.85],
+          labelAt: [0.625, 3.0786],
           tone: 'infra'
         },
         {

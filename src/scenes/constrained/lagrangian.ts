@@ -20,14 +20,14 @@ export const lagrangian = board({
           kind: 'line',
           points: sample(0, 4.5, 80, (x) => (x - 3) ** 2),
           label: 'f(x) = (x − 3)²',
-          labelAt: [3.05, 3.6],
+          labelAt: [3.0038, 4.0929],
           tone: 'ingest'
         },
         {
           kind: 'line',
           points: sample(0, 4.5, 80, (x) => (x - 3) ** 2 + 2 * (x - 2)),
           label: 'L(x, 2) = f + 2(x − 2)',
-          labelAt: [3.5, 0.6],
+          labelAt: [3.2692, -1.6179],
           tone: 'serve'
         },
         {
@@ -41,7 +41,7 @@ export const lagrangian = board({
           kind: 'scatter',
           points: [[3, 0]],
           label: 'unconstrained x = 3',
-          labelAt: [3.15, -0.6],
+          labelAt: [3.0115, 0.87857],
           tone: 'neutral'
         },
       ]

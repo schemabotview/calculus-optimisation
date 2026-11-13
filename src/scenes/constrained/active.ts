@@ -16,7 +16,7 @@ export const active = board({
       title: 'Add machine availability M ≤ 8 to the cheapest-24-chairs problem',
       ...AXES,
       series: [
-        ...regionSeries,
+        ...regionSeries([29.06, 10.93]),
         {
           kind: 'line',
           points: costLine(600),
@@ -35,11 +35,11 @@ export const active = board({
           kind: 'scatter',
           points: [[18, 8]],
           label: '(18, 8): £600',
-          labelAt: [18.6, 9.6],
+          labelAt: [18.6, 11.143],
           tone: 'ingest'
         },
         { ...arrow([23, 8], 'feasible: along M = 8', 'ingest', [18, 8]), labelAt: [23.5, 8.9] },
-        { ...arrow([22, 6.55], 'into the region', 'ingest', [18, 8]), labelAt: [22.5, 5.2] },
+        { ...arrow([22, 6.55], 'into the region', 'ingest', [18, 8]), labelAt: [22.5, 5.7143] },
       ]
     },
     {

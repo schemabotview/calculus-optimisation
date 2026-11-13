@@ -6,9 +6,9 @@ import { board, caution, fact, facts } from '../frame'
 // partial derivatives at the origin exist and are 0.
 const RAYS = [
   { m: 0, color: 'neutral', label: 'y = 0: f = 0', at: [0.62, 0.07] },
-  { m: 1, color: 'infra', label: 'y = x: f = 0.5', at: [0.62, 0.98] },
-  { m: -1, color: 'ingest', label: 'y = −x: f = −0.5', at: [0.45, -0.9] },
-  { m: 2, color: 'serve', label: 'y = 2x: f = 0.4', at: [-0.35, -1.05] },
+  { m: 1, color: 'infra', label: 'y = x: f = 0.5', labelAt: [0.96286, 0.82571], at: [0.62, 0.98] },
+  { m: -1, color: 'ingest', label: 'y = −x: f = −0.5', labelAt: [0.72429, -0.79714], at: [0.45, -0.9] },
+  { m: 2, color: 'serve', label: 'y = 2x: f = 0.4', labelAt: [-0.35, -1.1014], at: [-0.35, -1.05] },
 ] as const
 export const paths = board({
   id: 'paths',

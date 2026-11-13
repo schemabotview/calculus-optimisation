@@ -21,7 +21,7 @@ export const limitsInfinity = board({
           points: [[1, -8], [1, 10]],
           dashed: true,
           label: 'x = 1',
-          labelAt: [-0.6, 9],
+          labelAt: [-0.18773, 8.2],
           tone: 'neutral'
         },
         {

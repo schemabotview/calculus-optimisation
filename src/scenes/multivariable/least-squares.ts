@@ -45,7 +45,7 @@ export const leastSquares = board({
             number
           ] => [t, Y[i]]),
           label: 'observed',
-          labelAt: [4.1, 12.6],
+          labelAt: [3.8674, 12.6],
           tone: 'infra' as const
         },
       ]

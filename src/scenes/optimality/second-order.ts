@@ -20,14 +20,14 @@ export const secondOrder = board({
           kind: 'line',
           points: sample(-1.14, 1.14, 80, (x) => x * x),
           label: 'x²: f″ = 2, minimum',
-          labelAt: [-1.28, 1.2],
+          labelAt: [-1.0409, 1.04],
           tone: 'ingest'
         },
         {
           kind: 'line',
           points: sample(-1.07, 1.07, 80, (x) => x ** 4),
           label: 'x⁴: f″ = 0, still a minimum',
-          labelAt: [0.32, 1.2],
+          labelAt: [0.18718, 1.04],
           tone: 'store'
         },
         {
@@ -41,7 +41,7 @@ export const secondOrder = board({
           kind: 'line',
           points: sample(-1.09, 1.09, 80, (x) => x ** 3),
           label: 'x³: f″ = 0, neither',
-          labelAt: [-1.28, -0.95],
+          labelAt: [-1.0409, -1.2843],
           tone: 'infra'
         },
       ]

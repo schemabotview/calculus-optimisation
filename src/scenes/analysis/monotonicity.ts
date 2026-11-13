@@ -21,14 +21,14 @@ export const monotonicity = board({
           kind: 'line',
           points: sample(-2.2, 2.2, 120, f),
           label: 'f(x)',
-          labelAt: [1.75, 0.2],
+          labelAt: [1.8364, 0.2],
           tone: 'ingest'
         },
         {
           kind: 'line',
           points: sample(-2.2, 2.2, 120, df),
           label: 'f′(x)',
-          labelAt: [1.55, 4.2],
+          labelAt: [1.5932, 4.2],
           tone: 'infra'
         },
         {
@@ -42,7 +42,7 @@ export const monotonicity = board({
           kind: 'scatter',
           points: [[1, -2]],
           label: 'f′(1) = 0',
-          labelAt: [0.55, -2.7],
+          labelAt: [0.55, -2.9036],
           tone: 'serve'
         },
       ]

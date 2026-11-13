@@ -21,14 +21,14 @@ export const sensitivity = board({
           kind: 'line',
           points: sample(5.2, 12, 120, C),
           label: 'optimal cost C(m)',
-          labelAt: [5.4, 728],
+          labelAt: [5.4, 724],
           tone: 'ingest'
         },
         {
           kind: 'line',
           points: [[6, 630], [9.3, 580.5]],
           label: 'slope −λ₂ = −15',
-          labelAt: [6.1, 645],
+          labelAt: [6.1721, 645],
           tone: 'infra'
         },
         {

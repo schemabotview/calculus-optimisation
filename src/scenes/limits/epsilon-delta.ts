@@ -20,7 +20,7 @@ export const epsilonDelta = board({
           points: [[1.5, 6], [4.5, 6]],
           dashed: true,
           label: '7 − ε',
-          labelAt: [1.55, 5.65],
+          labelAt: [1.55, 5.9071],
           tone: 'serve'
         },
         {
@@ -36,7 +36,7 @@ export const epsilonDelta = board({
           points: [[2.5, 4], [2.5, 10]],
           dashed: true,
           label: '3 − δ',
-          labelAt: [2.05, 9.6],
+          labelAt: [2.05, 9.4],
           tone: 'infra'
         },
         {
@@ -44,14 +44,14 @@ export const epsilonDelta = board({
           points: [[3.5, 4], [3.5, 10]],
           dashed: true,
           label: '3 + δ',
-          labelAt: [3.6, 9.6],
+          labelAt: [3.6, 9.4],
           tone: 'infra'
         },
         {
           kind: 'line',
           points: [[1.5, 4], [4.5, 10]],
           label: 'y = 2x + 1',
-          labelAt: [3.85, 7.7],
+          labelAt: [3.85, 7.9571],
           tone: 'ingest'
         },
         {

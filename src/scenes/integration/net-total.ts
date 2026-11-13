@@ -43,7 +43,7 @@ export const netTotal = board({
           kind: 'line',
           points: sample(0, 4.2, 100, v),
           label: 'v(t)',
-          labelAt: [3.85, 3.2],
+          labelAt: [3.762, 3],
           tone: 'ingest'
         },
       ]

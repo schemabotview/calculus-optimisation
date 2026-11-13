@@ -29,12 +29,12 @@ export const gradient = board({
           kind: 'line',
           points: outputLevel(30, 14.1, 26),
           label: 'Q = 30',
-          labelAt: [23.5, 9.9],
+          labelAt: [23.5, 10.179],
           tone: 'neutral'
         },
         arrow([16 + S * 0.49, 9 + S * 0.8716], '∇Q direction: rate 1.53', 'serve', [16, 9]),
-        { ...arrow([16 + S * 0.8716, 9 - S * 0.49], 'along Q = 24: rate 0', 'store', [16, 9]), labelAt: [16.6, 5.6] },
-        arrow([16 + S, 9], 'L only: rate 0.75', 'ingest', [16, 9]),
+        { ...arrow([16 + S * 0.8716, 9 - S * 0.49], 'along Q = 24: rate 0', 'store', [16, 9]), labelAt: [15.857, 4.7643] },
+        arrow([16 + S, 9], 'L only: rate 0.75', 'ingest', [16, 9], [20, 7.6071]),
       ]
     },
     {

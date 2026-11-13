@@ -22,21 +22,21 @@ export const sampled = board({
           kind: 'line',
           points: sample(1, 5.5, 60, (w) => (w - 2) ** 2),
           label: 'hours with y = 2',
-          labelAt: [4.05, 8.5],
+          labelAt: [4.0063, 8.1],
           tone: 'neutral'
         },
         {
           kind: 'line',
           points: sample(1, 5.5, 60, (w) => (w - 4) ** 2),
           label: 'y = 4',
-          labelAt: [1.1, 8.5],
+          labelAt: [1.1, 8.1],
           tone: 'neutral'
         },
         {
           kind: 'line',
           points: sample(1, 5.5, 60, full),
-          label: 'full f(w): minimum 0.5 at w = 3',
-          labelAt: [3.15, 0.55],
+          label: 'full f(w)',
+          labelAt: [3.2374, 0.93571],
           tone: 'ingest'
         },
         {
@@ -50,7 +50,7 @@ export const sampled = board({
           kind: 'scatter',
           points: [[4.4, full(4.4)]],
           label: 'w₁ = 4.4',
-          labelAt: [4.25, 3.1],
+          labelAt: [4.2063, 3.1],
           tone: 'serve'
         },
         {

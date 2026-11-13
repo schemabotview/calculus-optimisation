@@ -25,7 +25,7 @@ export const conditioning = board({
           kind: 'scatter',
           points: pts(GD),
           label: 'gradient descent, best fixed α',
-          labelAt: [1.7, 3.6],
+          labelAt: [1.656, 4.0971],
           tone: 'serve'
         },
         { kind: 'line', points: pts(BFGS), tone: 'ingest' },
@@ -40,7 +40,7 @@ export const conditioning = board({
           kind: 'line',
           points: [[0, 0], [4, 0]],
           label: 'Newton: 1 step',
-          labelAt: [3.0, 0.1],
+          labelAt: [3, 0.22429],
           tone: 'store'
         },
       ]

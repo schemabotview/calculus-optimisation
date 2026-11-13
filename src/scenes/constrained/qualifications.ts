@@ -28,17 +28,17 @@ export const qualifications = board({
           kind: 'line',
           points: [...cusp, [1.15, 0], [0, 0]],
           label: 'feasible: 0 ≤ y ≤ x³',
-          labelAt: [0.7, 0.62],
+          labelAt: [1.1343, 0.62],
           tone: 'store'
         },
-        arrow([0.5, 0], '∇f = (1, 0)', 'serve'),
+        arrow([0.5, 0], '∇f = (1, 0)', 'serve', [0, 0], [1.1514, 2.2204e-16]),
         arrow([0, 0.5], '∇g₁ = (0, 1)', 'ingest'),
         arrow([0, -0.5], '∇g₂ = (0, −1)', 'consume'),
         {
           kind: 'scatter',
           points: [[0, 0]],
           label: 'minimiser (0, 0)',
-          labelAt: [-0.55, 0.12],
+          labelAt: [-1.0929, -0.042857],
           tone: 'infra'
         },
       ]

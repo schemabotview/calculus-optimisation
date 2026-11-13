@@ -43,7 +43,7 @@ export const meanValue = board({
           kind: 'scatter',
           points: [[c, f(c)]],
           label: 'c = 2/√3 ≈ 1.155',
-          labelAt: [0.25, -1.75],
+          labelAt: [0.17638, -2.0714],
           tone: 'serve'
         },
       ]

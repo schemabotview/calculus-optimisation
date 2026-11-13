@@ -26,7 +26,7 @@ export const comparison = board({
           kind: 'line',
           points: sample(1, 4, 100, (x) => Math.exp(-x * x)),
           label: 'e^(−x²): area 0.139',
-          labelAt: [1.05, 0.06],
+          labelAt: [1.0202, 0.024],
           tone: 'ingest'
         },
       ]

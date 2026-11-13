@@ -31,7 +31,7 @@ export const polar = board({
           kind: 'line',
           points: cell(0.4),
           label: 'r ≈ 0.6: area 0.096',
-          labelAt: [0.95, 0.2],
+          labelAt: [1.91, 0.35429],
           tone: 'ingest' as const
         },
         {

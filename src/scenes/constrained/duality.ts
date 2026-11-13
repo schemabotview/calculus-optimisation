@@ -28,14 +28,14 @@ export const duality = board({
           kind: 'line',
           points: sample(0, 40, 100, qStar),
           label: 'dual bound q*(λ₂)',
-          labelAt: [29, 587.5],
+          labelAt: [30.228, 590.07],
           tone: 'ingest'
         },
         {
           kind: 'scatter',
           points: [[15, 600]],
           label: 'λ = (30, 15): gap 0',
-          labelAt: [10.5, 596.5],
+          labelAt: [10.5, 595.64],
           tone: 'serve'
         },
         {

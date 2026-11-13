@@ -27,7 +27,7 @@ export const kkt = board({
       title: 'At (18, 8) the cost gradient is balanced by the two active constraints',
       ...AXES,
       series: [
-        ...regionSeries,
+        ...regionSeries([27, 5.79]),
         {
           kind: 'line',
           points: costLine(600),
@@ -37,7 +37,7 @@ export const kkt = board({
         },
         arrow(at([20, 30]), '∇f = (20, 30)', 'serve', P),
         { ...arrow(at([20, 45]), '−λ₁∇g₁ = (20, 45)', 'ingest', P), labelAt: [20.6, 13.2] },
-        { ...arrow(at([0, -15]), '−λ₂∇g₂ = (0, −15)', 'consume', P), labelAt: [5.5, 6.6] },
+        { ...arrow(at([0, -15]), '−λ₂∇g₂ = (0, −15)', 'consume', P), labelAt: [4.8143, 5.5714] },
       ]
     },
     {

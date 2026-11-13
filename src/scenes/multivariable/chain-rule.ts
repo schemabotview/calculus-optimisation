@@ -45,10 +45,10 @@ export const chainRule = board({
           kind: 'scatter',
           points: PATH,
           label: 'path g(t)',
-          labelAt: [21.2, 13.6],
+          labelAt: [20.429, 13.214],
           tone: 'ingest'
         },
-        { ...arrow([17.5, 9 + 2 * 1.3333], '∇Q (×2)', 'serve', [16, 9]), labelAt: [17.7, 11.9] },
+        { ...arrow([17.5, 9 + 2 * 1.3333], '∇Q (×2)', 'serve', [16, 9]), labelAt: [18.214, 12.093] },
         { ...arrow([18, 10], 'g′(0) = (2, 1)', 'infra', [16, 9]), labelAt: [17.2, 8.5] },
       ]
     },

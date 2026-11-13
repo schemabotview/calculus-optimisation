@@ -19,7 +19,7 @@ export const differentiability = board({
           kind: 'line',
           points: [[-2, 2], [0, 0], [2, 2]],
           label: '|x|',
-          labelAt: [-1.95, 1.65],
+          labelAt: [-2.0929, 1.5964],
           tone: 'serve'
         },
         {
@@ -29,14 +29,14 @@ export const differentiability = board({
             number
           ] => { const x = -1.4 + (2.8 * i) / 40; return [x, x * x]; }),
           label: 'x²',
-          labelAt: [1.15, 1.5],
+          labelAt: [1.2929, 1.5],
           tone: 'ingest'
         },
         {
           kind: 'line',
           points: [[-1, 0], [1, 0]],
           label: 'tangent to x²: y = 0',
-          labelAt: [0.25, -0.3],
+          labelAt: [0.25, -0.46071],
           tone: 'store'
         },
         { kind: 'scatter', points: [[0, 0]], tone: 'infra' },

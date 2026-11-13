@@ -28,14 +28,14 @@ export const existence = board({
           kind: 'scatter',
           points: [[1, -1]],
           label: 'minimum −1 at x = 1',
-          labelAt: [0.55, -1.35],
+          labelAt: [0.55, -1.5643],
           tone: 'store'
         },
         {
           kind: 'scatter',
           points: [[2, 3]],
           label: 'maximum 3 at x = 2',
-          labelAt: [1.05, 3.2],
+          labelAt: [1.05, 3],
           tone: 'store'
         },
         {
@@ -49,7 +49,7 @@ export const existence = board({
           kind: 'scatter',
           points: [[1.5321, 0]],
           label: 'root ≈ 1.532',
-          labelAt: [1.6, -0.45],
+          labelAt: [1.5755, -0.45],
           tone: 'infra'
         },
       ]

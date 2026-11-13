@@ -22,7 +22,7 @@ export const feasible = board({
           kind: 'line',
           points: sample(1.9, 16, 120, costPerChair),
           label: 'c(q) = 40/q + 0.5q + 2',
-          labelAt: [2.6, 24.5],
+          labelAt: [2.6, 24.114],
           tone: 'ingest'
         },
         {
@@ -30,14 +30,14 @@ export const feasible = board({
           from: [CAPACITY, 8],
           to: [CAPACITY, 26],
           label: 'capacity q = 8',
-          labelAt: [5.6, 20],
+          labelAt: [5.1145, 20],
           tone: 'neutral'
         },
         {
           kind: 'scatter',
           points: [[CAPACITY, costPerChair(CAPACITY)]],
           label: 'feasible minimum: q = 8, £11.00',
-          labelAt: [2.2, 9.3],
+          labelAt: [2.0382, 9.3],
           tone: 'store'
         },
         {

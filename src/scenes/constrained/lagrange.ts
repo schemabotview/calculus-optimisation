@@ -26,14 +26,14 @@ export const lagrange = board({
           kind: 'line',
           points: outputLevel(24, 6, 36),
           label: 'h = 0: exactly 24 chairs',
-          labelAt: [26, 3.2],
+          labelAt: [26, 6.2857],
           tone: 'store'
         },
         {
           kind: 'line',
           points: [[0, 587.88 / 30], [587.88 / 20, 0]],
           label: 'cost £587.88',
-          labelAt: [2, 17.6],
+          labelAt: [6.8, 19.143],
           tone: 'infra'
         },
         {
@@ -44,12 +44,12 @@ export const lagrange = board({
           tone: 'neutral'
         },
         arrow([P[0] + 5, P[1] + 7.5], '∇f / 4 = (5, 7.5)', 'serve', P),
-        { ...arrow([P[0] + 4 * 0.8165, P[1] + 4 * 1.2247], '4∇h', 'ingest', P), labelAt: [15.4, 14.2] },
+        { ...arrow([P[0] + 4 * 0.8165, P[1] + 4 * 1.2247], '4∇h', 'ingest', P), labelAt: [14.714, 14.2] },
         {
           kind: 'scatter',
           points: [P],
           label: '(14.70, 9.80)',
-          labelAt: [15.6, 9.3],
+          labelAt: [18.343, 10.329],
           tone: 'ingest'
         },
       ]

@@ -21,14 +21,14 @@ export const extrema = board({
           kind: 'line',
           points: sample(-2, 2.5, 120, g),
           label: 'g(x)',
-          labelAt: [1.75, 0.9],
+          labelAt: [1.6518, 1.1571],
           tone: 'ingest'
         },
         {
           kind: 'scatter',
           points: [[-2, -2]],
           label: 'endpoint −2',
-          labelAt: [-2.2, -2.75],
+          labelAt: [-2.0037, -2.75],
           tone: 'infra'
         },
         {
@@ -42,14 +42,14 @@ export const extrema = board({
           kind: 'scatter',
           points: [[1, -2]],
           label: 'local min −2',
-          labelAt: [0.55, -2.75],
+          labelAt: [0.25552, -3.0071],
           tone: 'serve'
         },
         {
           kind: 'scatter',
           points: [[2.5, 8.125]],
           label: 'global max 8.125',
-          labelAt: [1.2, 8.4],
+          labelAt: [1.2, 7.8],
           tone: 'store'
         },
       ]

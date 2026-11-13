@@ -24,7 +24,7 @@ export const methods = board({
           kind: 'line',
           points: sample(0.5, 3.5, 100, f),
           label: 'f = (x − 3)²',
-          labelAt: [0.55, 5.6],
+          labelAt: [0.63791, 5.4],
           tone: 'neutral'
         },
         {
@@ -38,7 +38,7 @@ export const methods = board({
           kind: 'line',
           points: sample(0.5, 1.995, 150, bar(1)),
           label: 'barrier t = 1: min at 1.634',
-          labelAt: [0.55, 2.2],
+          labelAt: [0.5207, 1.9429],
           tone: 'ingest'
         },
         {
@@ -46,7 +46,7 @@ export const methods = board({
           from: [2, 0],
           to: [2, 6],
           label: 'x = 2',
-          labelAt: [1.85, 0.25],
+          labelAt: [1.7914, 0.25],
           tone: 'store'
         },
       ]

@@ -25,7 +25,7 @@ export const backtracking = board({
           kind: 'line',
           points: sample(0, 0.53, 120, phi),
           label: 'φ(α)',
-          labelAt: [0.44, 150],
+          labelAt: [0.43434, 150],
           tone: 'ingest'
         },
         {
@@ -39,14 +39,14 @@ export const backtracking = board({
           kind: 'scatter',
           points: [trial(0.5)],
           label: 'α = 0.5: rejected',
-          labelAt: [0.36, 186],
+          labelAt: [0.36, 180],
           tone: 'serve'
         },
         {
           kind: 'scatter',
           points: [trial(0.25)],
           label: 'α = 0.25: rejected',
-          labelAt: [0.26, 42],
+          labelAt: [0.22036, 63.429],
           tone: 'serve'
         },
         {

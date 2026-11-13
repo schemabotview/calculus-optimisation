@@ -19,14 +19,14 @@ export const linearisation = board({
           kind: 'line',
           points: sample(0, 10, 120, Math.sqrt),
           label: '√x',
-          labelAt: [7.3, 2.45],
+          labelAt: [7.3993, 2.45],
           tone: 'ingest'
         },
         {
           kind: 'line',
           points: sample(0, 10, 2, (x) => 2 + (x - 4) / 4),
           label: 'L(x)',
-          labelAt: [7.3, 3.2],
+          labelAt: [7.3, 3.0457],
           tone: 'infra'
         },
         {
@@ -41,7 +41,7 @@ export const linearisation = board({
           from: [9, 3],
           to: [9, 3.25],
           label: 'error 0.25 at x = 9',
-          labelAt: [7.1, 3.45],
+          labelAt: [7.6955, 2.4686],
           tone: 'serve'
         },
       ]

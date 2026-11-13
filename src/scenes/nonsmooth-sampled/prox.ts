@@ -21,28 +21,28 @@ export const prox = board({
           kind: 'line',
           points: [[-2.5, -2.5], [2.5, 2.5]],
           label: 'identity',
-          labelAt: [1.6, 2.35],
+          labelAt: [0.6, 2],
           tone: 'neutral'
         },
         {
           kind: 'line',
           points: sample(-3, 3, 240, soft(0.5)),
           label: 'λ = 0.5',
-          labelAt: [2.55, 1.75],
+          labelAt: [2.6929, 1.8571],
           tone: 'ingest'
         },
         {
           kind: 'line',
           points: sample(-3, 3, 240, soft(1)),
           label: 'λ = 1',
-          labelAt: [2.55, 1.15],
+          labelAt: [2.55, 1.2571],
           tone: 'serve'
         },
         {
           kind: 'scatter',
           points: [[1.5, 0.5]],
           label: 'v = 1.5 → 0.5',
-          labelAt: [0.55, 0.85],
+          labelAt: [1.55, 0.31429],
           tone: 'infra'
         },
       ]

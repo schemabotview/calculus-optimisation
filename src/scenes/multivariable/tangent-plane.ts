@@ -22,14 +22,14 @@ export const tangentPlane = board({
           kind: 'line',
           points: [[-8, 24 + 56 / 12], [8, 24 - 56 / 12]],
           label: 'tangent plane: 24 − 7h/12',
-          labelAt: [-7.6, 29.4],
+          labelAt: [-7.4318, 27.8],
           tone: 'infra'
         },
         {
           kind: 'line',
           points: sample(-8, 8, 120, slice),
           label: 'Q(16 + h, 9 − h)',
-          labelAt: [5.4, 15.4],
+          labelAt: [3.8862, 11.629],
           tone: 'ingest'
         },
         {

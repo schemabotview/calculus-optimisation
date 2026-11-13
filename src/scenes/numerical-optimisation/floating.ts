@@ -22,21 +22,21 @@ export const floating = board({
           kind: 'line',
           points: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(exact),
           label: 'exact rise δ²',
-          labelAt: [-9.8, -16.6],
+          labelAt: [-10.23, -17.5],
           tone: 'ingest'
         },
         {
           kind: 'scatter',
           points: COMPUTED.map((v, i): P => [-(i + 1), Math.log10(v)]),
           label: 'computed f(1 + δ) − f(1)',
-          labelAt: [-6.2, -9.6],
+          labelAt: [-6.5223, -7.35],
           tone: 'infra'
         },
         {
           kind: 'line',
           points: [[-10.5, Math.log10(2.2e-16)], [0, Math.log10(2.2e-16)]],
           label: 'ε ≈ 2.2 × 10⁻¹⁶: computed rise is 0 below δ = 10⁻⁸',
-          labelAt: [-10.3, -15],
+          labelAt: [-9.4407, -20.4],
           tone: 'serve'
         },
       ]

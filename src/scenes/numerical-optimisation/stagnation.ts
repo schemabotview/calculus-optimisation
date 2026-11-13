@@ -36,14 +36,14 @@ export const stagnation = board({
           kind: 'line',
           points: SLOW.g,
           label: 'α = 0.001: ‖∇f‖ still ≈ 1 at 1100',
-          labelAt: [620, 0.75],
+          labelAt: [513.13, 0.75],
           tone: 'serve'
         },
         {
           kind: 'line',
           points: SLOW.s,
           label: 'α = 0.001: step length, below 10⁻³',
-          labelAt: [620, -2.55],
+          labelAt: [482.6, -2.55],
           tone: 'infra'
         },
         {

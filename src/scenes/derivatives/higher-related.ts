@@ -28,7 +28,7 @@ export const higherRelated = board({
           kind: 'line',
           points: sample(0, 4.2, 100, v),
           label: 's′(t)',
-          labelAt: [3.7, 6.2],
+          labelAt: [3.7825, 5.9],
           tone: 'infra'
         },
         {
@@ -42,7 +42,7 @@ export const higherRelated = board({
           kind: 'scatter',
           points: [[3, 0]],
           label: 'stop at t = 3',
-          labelAt: [3.05, -1.0],
+          labelAt: [3.05, -1.3],
           tone: 'serve'
         },
       ]

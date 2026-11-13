@@ -27,7 +27,7 @@ export const triple = board({
         {
           kind: 'line',
           points: sample(0, 1, 60, (z) => (500 * (1 - z) ** 2) / 2),
-          label: 'uniform ρ = 500: mass 83.3 kg',
+          label: 'uniform: 83.3 kg',
           labelAt: [0.04, 95],
           tone: 'neutral'
         },

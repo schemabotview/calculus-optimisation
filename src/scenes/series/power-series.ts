@@ -25,14 +25,14 @@ export const powerSeries = board({
           kind: 'line',
           points: sample(-0.92, 2, 100, Math.log1p),
           label: 'ln(1 + x)',
-          labelAt: [1.7, 1.15],
+          labelAt: [1.6389, 1.15],
           tone: 'ingest'
         },
         {
           kind: 'line',
           points: sample(-1, 1.55, 100, S(5)),
           label: 'S₅',
-          labelAt: [1.6, 1.85],
+          labelAt: [1.6, 1.55],
           tone: 'infra'
         },
         {
@@ -47,7 +47,7 @@ export const powerSeries = board({
           from: [1, -2.5],
           to: [1, 2],
           label: 'radius 1',
-          labelAt: [0.72, -2.3],
+          labelAt: [0.65885, -2.3],
           tone: 'neutral'
         },
       ]

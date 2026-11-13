@@ -24,7 +24,7 @@ export const newton = board({
           kind: 'line',
           points: sample(-4, 4, 120, F),
           label: 'F(x) = √(1 + x²)',
-          labelAt: [2.1, 3.6],
+          labelAt: [2.0182, 3.6729],
           tone: 'ingest'
         },
         {
@@ -32,14 +32,14 @@ export const newton = board({
           from: at(1.5),
           to: at(-3.375),
           label: 'full step: 1.5 → −3.375',
-          labelAt: [-3.2, 3.95],
+          labelAt: [-3.2, 3.86],
           tone: 'serve'
         },
         { kind: 'line', points: DAMPED.map(at), tone: 'store' },
         {
           kind: 'scatter',
           points: DAMPED.map(at),
-          label: 'damped: 1.5, −0.94, 0.82, −0.56, 0.18, −0.005',
+          label: 'damped Newton',
           labelAt: [-2.3, 0.95],
           tone: 'store'
         },

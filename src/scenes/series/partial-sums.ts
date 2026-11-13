@@ -33,7 +33,7 @@ export const partialSums = board({
           kind: 'line',
           points: H,
           label: 'Σ 1/k: grows like ln n, without bound',
-          labelAt: [1.9, 7.4],
+          labelAt: [1.7382, 8.3],
           tone: 'serve'
         },
         {
@@ -47,7 +47,7 @@ export const partialSums = board({
           kind: 'line',
           points: S2,
           label: 'Σ 1/k²: settles at π²/6',
-          labelAt: [1.2, 0.8],
+          labelAt: [1.2, 0.575],
           tone: 'ingest'
         },
       ]

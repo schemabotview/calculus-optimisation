@@ -32,7 +32,7 @@ export const rootFinding = board({
             number
           ] => [q, costSlope(q)]),
           label: 'Newton iterates',
-          labelAt: [4.6, -1.1],
+          labelAt: [5.0607, -1.1364],
           tone: 'infra'
         },
         {

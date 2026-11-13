@@ -20,21 +20,21 @@ export const existence = board({
           kind: 'line',
           points: sample(-3.2, 1.6, 100, Math.exp),
           label: 'eˣ: no minimiser',
-          labelAt: [0.25, 4.6],
+          labelAt: [0.25, 4.46],
           tone: 'serve'
         },
         {
           kind: 'line',
           points: sample(-2.2, 2.2, 100, (x) => x * x),
           label: 'x²: unique minimiser 0',
-          labelAt: [-2.9, 4.6],
+          labelAt: [-2.1377, 4.46],
           tone: 'ingest'
         },
         {
           kind: 'line',
           points: sample(-3.2, 3.2, 160, flat),
-          label: 'max(0, |x| − 1)²: minimisers fill [−1, 1]',
-          labelAt: [-1.75, -0.3],
+          label: 'flat on [−1, 1]',
+          labelAt: [-2.9569, 0.047143],
           tone: 'store'
         },
       ]

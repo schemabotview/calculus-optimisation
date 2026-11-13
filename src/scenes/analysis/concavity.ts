@@ -19,21 +19,21 @@ export const concavity = board({
           kind: 'line',
           points: sample(-1.15, 1.15, 100, (x) => x ** 3),
           label: 'x³: inflection',
-          labelAt: [0.55, -0.85],
+          labelAt: [0.43758, -0.98714],
           tone: 'ingest'
         },
         {
           kind: 'line',
           points: sample(-1.12, 1.12, 100, (x) => x ** 4),
           label: 'x⁴: minimum',
-          labelAt: [-1.35, 1.25],
+          labelAt: [-1.4062, 0.83857],
           tone: 'store'
         },
         {
           kind: 'line',
           points: sample(-1.12, 1.12, 100, (x) => -(x ** 4)),
           label: '−x⁴: maximum',
-          labelAt: [-1.35, -1.35],
+          labelAt: [-1.4062, -1.0071],
           tone: 'serve'
         },
         { kind: 'scatter', points: [[0, 0]], tone: 'infra' },

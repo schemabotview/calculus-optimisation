@@ -6,14 +6,15 @@ import { MACHINE_CAP, outputLevel } from '../workshop'
 // boundary inside the window L ≤ 40. Not a scene.
 export const REGION: P[] = [...outputLevel(24, 18, 40), [40, MACHINE_CAP], [18, MACHINE_CAP]]
 export const costLine = (c: number): P[] => [[0, c / 30], [c / 20, 0]]
-export const regionSeries: PlotSeries[] = [
+/** The feasible region and its two boundaries. `at` places the region's label for the plot it is in. */
+export const regionSeries = (at: P): PlotSeries[] => [
   { kind: 'line', points: outputLevel(24, 4.8, 40), tone: 'neutral' },
   { kind: 'line', points: [[0, MACHINE_CAP], [40, MACHINE_CAP]], tone: 'neutral' },
   {
     kind: 'line',
     points: REGION,
-    label: 'feasible: Q ≥ 24 and M ≤ 8',
-    labelAt: [27, 6.3],
+    label: 'feasible',
+    labelAt: at,
     tone: 'store'
   },
 ]

@@ -29,7 +29,7 @@ export const variance = board({
           kind: 'scatter',
           points: EMP,
           label: '10 000 draws each',
-          labelAt: [9.5, 0.36],
+          labelAt: [9.5, 0.42857],
           tone: 'infra'
         },
       ]

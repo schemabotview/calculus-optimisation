@@ -19,22 +19,22 @@ export const stepSize = board({
         {
           kind: 'line',
           points: descent(0.05, 40),
-          label: 'α = 0.05: smooth, slow',
-          labelAt: [-2.2, 0.75],
+          label: 'α = 0.05: slow',
+          labelAt: [-4.9429, 1.47],
           tone: 'ingest'
         },
         {
           kind: 'line',
           points: descent(0.18, 40),
           label: 'α = 0.18: zigzags, converges',
-          labelAt: [-3.9, -1.25],
+          labelAt: [-5.4086, -2.1757],
           tone: 'store'
         },
         {
           kind: 'line',
           points: descent(0.21, 4),
           label: 'α = 0.21: diverges',
-          labelAt: [-2.4, 2.25],
+          labelAt: [-3.6343, 1.92],
           tone: 'serve'
         },
       ]

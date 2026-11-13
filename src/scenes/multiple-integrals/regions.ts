@@ -38,7 +38,7 @@ export const regions = board({
           to: [0.75, 0.75],
           dashed: false,
           label: 'y fixed: x from 0 to y',
-          labelAt: [0.04, 0.8],
+          labelAt: [0.04, 0.98],
           tone: 'serve'
         },
         {

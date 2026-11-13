@@ -5,8 +5,8 @@ import { outputLevel } from '../workshop'
 // Level sets Q = c are the curves M = c²/(4L); the grid values are exact.
 const LEVELS = [
   { c: 12, color: 'ingest', at: [5.2, 6.2] },
-  { c: 18, color: 'store', at: [6.3, 14.6] },
-  { c: 24, color: 'infra', at: [10.3, 15.6] },
+  { c: 18, color: 'store', at: [5.79, 13.06] },
+  { c: 24, color: 'infra', at: [9.27, 15.21] },
   { c: 30, color: 'serve', at: [16.2, 16.2] },
 ] as const
 export const surfaces = board({
@@ -36,7 +36,7 @@ export const surfaces = board({
           kind: 'scatter',
           points: [[16, 9]],
           label: 'shift (16, 9): 24 chairs',
-          labelAt: [17, 10.2],
+          labelAt: [18.029, 11.743],
           tone: 'infra'
         },
       ]

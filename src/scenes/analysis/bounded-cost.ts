@@ -29,7 +29,7 @@ export const boundedCost = board({
           points: [[CAPACITY, 8], [CAPACITY, 26]],
           dashed: true,
           label: 'capacity q = 8',
-          labelAt: [8.2, 24.5],
+          labelAt: [8.2, 24.114],
           tone: 'serve'
         },
         {
@@ -43,7 +43,7 @@ export const boundedCost = board({
           kind: 'scatter',
           points: [[CAPACITY, costPerChair(CAPACITY)]],
           label: 'q = 8: £11, the optimum',
-          labelAt: [3.4, 10.3],
+          labelAt: [3.4, 9.5286],
           tone: 'store'
         },
         {

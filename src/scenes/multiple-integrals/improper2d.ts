@@ -25,14 +25,14 @@ export const improper2d = board({
           kind: 'line',
           points: [[0, Math.PI], [3, Math.PI]],
           label: 'π',
-          labelAt: [2.85, 3.3],
+          labelAt: [2.85, 3.15],
           tone: 'neutral'
         },
         {
           kind: 'line',
           points: sample(0, 3, 80, (R) => (Math.sqrt(Math.PI) * erf(R)) ** 2),
           label: 'square [−R, R]²: (√π erf R)²',
-          labelAt: [0.95, 2.75],
+          labelAt: [0.95, 3.125],
           tone: 'serve'
         },
         {

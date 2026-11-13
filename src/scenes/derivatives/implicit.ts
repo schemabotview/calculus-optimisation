@@ -20,7 +20,7 @@ export const implicit = board({
           kind: 'line',
           points: circle(5),
           label: 'x² + y² = 25',
-          labelAt: [-5.6, 4.5],
+          labelAt: [-6.7143, 4.7786],
           tone: 'ingest'
         },
         {
@@ -35,7 +35,7 @@ export const implicit = board({
           from: [0, 0],
           to: [3, 4],
           label: 'radius',
-          labelAt: [0.6, 2.2],
+          labelAt: [-0.51429, 2.7571],
           tone: 'neutral'
         },
         {

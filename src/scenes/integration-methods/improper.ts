@@ -26,7 +26,7 @@ export const improper = board({
           kind: 'line',
           points: sample(1, 10, 100, (x) => 1 / (x * x)),
           label: '1/x²: total area 1',
-          labelAt: [3.6, 0.15],
+          labelAt: [3.6, 0.072857],
           tone: 'ingest'
         },
       ]

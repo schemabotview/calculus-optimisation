@@ -20,14 +20,14 @@ export const mixed = board({
           kind: 'line',
           points: [[-1, 1], [1, -1]],
           label: 'f_x(0, y) = −y: slope −1',
-          labelAt: [-1.15, 1.12],
+          labelAt: [-2.3157, 0.96],
           tone: 'ingest'
         },
         {
           kind: 'line',
           points: [[-1, -1], [1, 1]],
           label: 'f_y(x, 0) = x: slope +1',
-          labelAt: [0.2, 1.12],
+          labelAt: [0.2, 0.96],
           tone: 'serve'
         },
       ]

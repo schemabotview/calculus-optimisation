@@ -64,14 +64,14 @@ export const critical = board({
           kind: 'scatter',
           points: [[1, 0]],
           label: '(1, 0): f = −2, a minimum',
-          labelAt: [0.55, -0.32],
+          labelAt: [2.1214, -0.10571],
           tone: 'ingest' as const
         },
         {
           kind: 'scatter',
           points: [[-1, 0]],
-          label: '(−1, 0): f = 2, a saddle',
-          labelAt: [-2.25, 0.3],
+          label: 'saddle (−1, 0)',
+          labelAt: [-4.5357, 0.3],
           tone: 'infra' as const
         },
       ]

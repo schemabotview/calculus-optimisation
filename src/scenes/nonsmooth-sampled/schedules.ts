@@ -24,7 +24,7 @@ export const schedules = board({
           kind: 'line',
           points: [[0, 3], [200, 3]],
           label: 'minimiser w = 3',
-          labelAt: [168, 2.92],
+          labelAt: [161.58, 3.0871],
           tone: 'neutral'
         },
         {

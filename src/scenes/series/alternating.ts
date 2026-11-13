@@ -22,7 +22,7 @@ export const alternating = board({
           kind: 'line',
           points: [[0, Math.LN2], [20, Math.LN2]],
           label: 'ln 2 = 0.6931',
-          labelAt: [16.5, 0.66],
+          labelAt: [16.5, 0.71571],
           tone: 'neutral'
         },
         { kind: 'line', points: S, tone: 'ingest' },

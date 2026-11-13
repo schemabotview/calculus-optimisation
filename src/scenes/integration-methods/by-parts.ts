@@ -28,14 +28,14 @@ export const byParts = board({
           kind: 'line',
           points: sample(-3, 1.3, 120, F),
           label: 'F(x) = (x − 1)eˣ',
-          labelAt: [-2.9, -0.5],
+          labelAt: [-2.9, -0.071429],
           tone: 'infra'
         },
         {
           kind: 'scatter',
           points: [[0, -1]],
           label: 'F has its minimum where f = 0',
-          labelAt: [-1.6, -1.35],
+          labelAt: [-1.8258, -1.4571],
           tone: 'serve'
         },
       ]

@@ -24,35 +24,35 @@ export const formulation = board({
           kind: 'line',
           points: REGION,
           label: 'feasible: Q ≥ 24',
-          labelAt: [27, 25],
+          labelAt: [22.714, 25],
           tone: 'store'
         },
         {
           kind: 'line',
           points: cost(450),
           label: '£450: infeasible',
-          labelAt: [1, 13.2],
+          labelAt: [9.5714, 17.7],
           tone: 'neutral'
         },
         {
           kind: 'line',
           points: cost(587.88),
           label: '£587.88: optimal',
-          labelAt: [21, 6.9],
+          labelAt: [22.714, 8.8286],
           tone: 'infra'
         },
         {
           kind: 'line',
           points: cost(750),
           label: '£750',
-          labelAt: [33, 2.6],
+          labelAt: [33, 3.8857],
           tone: 'neutral'
         },
         {
           kind: 'scatter',
           points: [[14.7, 9.8]],
           label: '(14.7, 9.8)',
-          labelAt: [15.3, 11.1],
+          labelAt: [17.014, 12.386],
           tone: 'serve'
         },
       ]

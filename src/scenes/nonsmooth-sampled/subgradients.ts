@@ -27,7 +27,7 @@ export const subgradients = board({
           kind: 'line',
           points: sample(-2.2, 3.6, 2, () => 0),
           label: 's = 0: flat, so 0 is the minimiser',
-          labelAt: [0.25, 0.15],
+          labelAt: [0.55857, -0.081429],
           tone: 'store'
         },
         {
@@ -41,7 +41,7 @@ export const subgradients = board({
           kind: 'line',
           points: [[-2.1, 4.2], [0, 0], [3.6, 3.6]],
           label: 'f(x) = max(−2x, x)',
-          labelAt: [-1.85, 3.3],
+          labelAt: [-0.15286, 3.3],
           tone: 'infra'
         },
       ]

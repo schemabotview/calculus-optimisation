@@ -22,7 +22,7 @@ export const trigSub = board({
           kind: 'line',
           points: quarter,
           label: 'area π/4',
-          labelAt: [0.25, 0.4],
+          labelAt: [0.16429, 0.43214],
           tone: 'ingest'
         },
         {

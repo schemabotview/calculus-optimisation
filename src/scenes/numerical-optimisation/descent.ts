@@ -26,10 +26,10 @@ export const descentScene = board({
       ...AXES,
       series: [
         ...levels([1, 4, 9, 15.75]),
-        arrow(unit([-3, -15]), '−∇f: steepest', 'serve', START),
-        { ...arrow(unit([-3, -1.5]), 'Newton: towards the centre', 'store', START), labelAt: [-1.5, 0.75] },
+        arrow(unit([-3, -15]), '−∇f: steepest', 'serve', START, [3.7049, -1.6954]),
+        { ...arrow(unit([-3, -1.5]), 'Newton', 'store', START), labelAt: [-1.7743, 0.85286] },
         { ...arrow(unit([-1, 0]), '(−1, 0)', 'ingest', START), labelAt: [0.55, 1.7] },
-        { ...arrow(unit([0, 1], 0.8), '(0, 1): uphill', 'infra', START), labelAt: [3.1, 2.1] },
+        { ...arrow(unit([0, 1], 0.8), '(0, 1): uphill', 'infra', START), labelAt: [3.1, 1.92] },
       ]
     },
     {

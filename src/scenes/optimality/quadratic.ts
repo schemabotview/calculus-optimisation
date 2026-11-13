@@ -29,7 +29,7 @@ export const quadratic = board({
           kind: 'line',
           points: ellipse(0.25),
           label: 'f = 0.30',
-          labelAt: [0.55, 2.98],
+          labelAt: [0.60485, 3.0121],
           tone: 'ingest'
         },
         {
@@ -50,14 +50,14 @@ export const quadratic = board({
           kind: 'scatter',
           points: [[0.25, 2.9]],
           label: 'least squares (0.25, 2.9)',
-          labelAt: [-1.6, 2.72],
+          labelAt: [-1.8194, 2.6557],
           tone: 'serve'
         },
         {
           kind: 'scatter',
           points: [[0.125, 2.95]],
           label: 'minimax (0.125, 2.95)',
-          labelAt: [-1.35, 3.12],
+          labelAt: [-0.91119, 3.4736],
           tone: 'consume'
         },
       ]

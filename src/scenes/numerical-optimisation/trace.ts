@@ -23,21 +23,21 @@ export const trace = board({
           kind: 'line',
           points: sample(2.5, 14, 100, c(36)),
           label: 'overhead £36',
-          labelAt: [12.4, 10.8],
+          labelAt: [12.153, 10.254],
           tone: 'neutral'
         },
         {
           kind: 'line',
           points: sample(2.5, 14, 100, c(44)),
           label: 'overhead £44',
-          labelAt: [12.4, 12.65],
+          labelAt: [12.153, 12.65],
           tone: 'neutral'
         },
         {
           kind: 'line',
           points: sample(2.5, 14, 100, c(40)),
           label: 'c(q), overhead £40',
-          labelAt: [3.1, 17.6],
+          labelAt: [3.1, 17.15],
           tone: 'ingest'
         },
         {

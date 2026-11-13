@@ -28,7 +28,7 @@ export const smooth = board({
           kind: 'line',
           points: [[-3, 0], [3, 0]],
           label: 'Taylor series at 0: T(x) = 0',
-          labelAt: [0.3, -0.06],
+          labelAt: [0.60113, -0.0021429],
           tone: 'serve'
         },
         {
